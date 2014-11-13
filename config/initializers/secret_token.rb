@@ -24,4 +24,4 @@ def secure_token
   end
 end
 
-AkpsiWebsite::Application.config.secret_key_base = secure_token
+Calakpsi::Application.config.secret_key_base = secure_token

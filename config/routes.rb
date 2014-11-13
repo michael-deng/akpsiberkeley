@@ -1,7 +1,13 @@
-AkpsiWebsite::Application.routes.draw do
-  get "static_pages/home"
+Calakpsi::Application.routes.draw do
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
+  devise_for :rushees
+  devise_for :actives
+  root to: "static_pages#home"
   get "static_pages/about"
-  get "static_pages/consulting"
+  get "static_pages/abc"
+  get "static_pages/bcs"
+  get "static_pages/abventures"
   get "static_pages/corporate"
   get "static_pages/contact"
   # The priority is based upon order of creation: first created -> highest priority.

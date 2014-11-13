@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-AkpsiWebsite::Application.load_tasks
+Calakpsi::Application.load_tasks

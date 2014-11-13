@@ -5,7 +5,13 @@ class StaticPagesController < ApplicationController
   def about
   end
 
-  def consulting
+  def abc
+  end
+
+  def bcs
+  end
+
+  def abventures
   end
 
   def corporate
