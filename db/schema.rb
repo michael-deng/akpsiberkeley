@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141113042459) do
+ActiveRecord::Schema.define(version: 20141212061029) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -42,6 +42,14 @@ ActiveRecord::Schema.define(version: 20141113042459) do
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "major"
+    t.string   "pledge_class"
+    t.text     "bio"
+    t.string   "hometown"
+    t.string   "previous_positions"
+    t.boolean  "eboard"
+    t.boolean  "display"
+    t.string   "linkedin"
   end
 
   add_index "actives", ["email"], name: "index_actives_on_email", unique: true
@@ -65,6 +73,28 @@ ActiveRecord::Schema.define(version: 20141113042459) do
   add_index "admin_users", ["email"], name: "index_admin_users_on_email", unique: true
   add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
 
+  create_table "awards", force: true do |t|
+    t.string   "name"
+    t.string   "members"
+    t.integer  "year"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "career_entries", force: true do |t|
+    t.string   "name"
+    t.string   "company"
+    t.string   "group"
+    t.integer  "year"
+    t.string   "location"
+    t.boolean  "fulltime"
+    t.boolean  "intern"
+    t.string   "job_category"
+    t.integer  "active_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "rushees", force: true do |t|
     t.string   "email"
     t.string   "encrypted_password",     default: "", null: false
@@ -79,6 +109,21 @@ ActiveRecord::Schema.define(version: 20141113042459) do
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "major"
+    t.string   "gpa"
+    t.string   "course1"
+    t.string   "course1_grade"
+    t.string   "course2"
+    t.string   "course2_grade"
+    t.string   "course3"
+    t.string   "course3_grade"
+    t.string   "course4"
+    t.string   "course4_grade"
+    t.string   "course5"
+    t.string   "course5_grade"
+    t.string   "course6"
+    t.string   "course6_grade"
+    t.boolean  "cut"
   end
 
   add_index "rushees", ["email"], name: "index_rushees_on_email", unique: true

@@ -1,9 +1,15 @@
 Calakpsi::Application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
+
   devise_for :rushees
   devise_for :actives
-  root to: "static_pages#home"
+  
+  resources :actives, only: [:index, :show] do
+    resources :career_entries
+  end
+
+  root "static_pages#home"
   get "static_pages/about"
   get "static_pages/abc"
   get "static_pages/bcs"
