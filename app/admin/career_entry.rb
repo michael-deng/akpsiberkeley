@@ -26,7 +26,7 @@ ActiveAdmin.register CareerEntry do
   end
 
   form do |f|
-    f.inputs "Career entry information" do
+    f.inputs "Career information" do
       f.input :name
       f.input :company
       f.input :group
@@ -38,6 +38,12 @@ ActiveAdmin.register CareerEntry do
     end
 
     f.actions
+  end
+
+  controller do
+    def permitted_params
+      params.permit!
+    end
   end
 
 end
