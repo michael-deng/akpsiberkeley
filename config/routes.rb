@@ -4,10 +4,12 @@ Calakpsi::Application.routes.draw do
 
   devise_for :rushees
   devise_for :actives
-  
+
   resources :actives, only: [:index, :show] do
     resources :career_entries
   end
+
+  resources :rushees, only: [:index, :show]
 
   root "static_pages#home"
   get "static_pages/about"
