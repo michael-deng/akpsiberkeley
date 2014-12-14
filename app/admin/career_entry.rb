@@ -31,7 +31,7 @@ ActiveAdmin.register CareerEntry do
       f.input :group
       f.input :year
       f.input :location
-      f.input :fulltime_or_intern, as: :select, collection; ["Internship", "Full-time"]
+      f.input :fulltime_or_intern, as: :select, collection: ["Internship", "Full-time"]
       f.input :job_category
     end
 
