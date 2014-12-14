@@ -8,12 +8,5 @@ class Active < ActiveRecord::Base
 
   validates :name, presence: true
   validates :email, presence: true
-  validates :pledge_class, presence: true
-  validates :hometown, presence: true
-  validates :linkedin, presence: true
-  validates :previous_positions, presence: true
-  validates :eboard, presence: true
-  validates :display, presence: true
-  validates :bio, presence: true
 
 end
