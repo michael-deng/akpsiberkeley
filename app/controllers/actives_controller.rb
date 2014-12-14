@@ -1,4 +1,4 @@
-class ActivesControllerController < ApplicationController
+class ActivesController < ApplicationController
 
 	def show
 		@active = Active.find(params[:id])
