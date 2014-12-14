@@ -9,6 +9,5 @@ class CareerEntry < ActiveRecord::Base
 	validates :fulltime_or_intern, presence: true
 	validates :location, presence: true
 	validates :job_category, presence: true
-	validates :bio, presence: true
 
 end
