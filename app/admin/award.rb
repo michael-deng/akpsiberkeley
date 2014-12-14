@@ -1,5 +1,5 @@
 ActiveAdmin.register Award do
-
+  permit_params :name, :members, :year
 
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
@@ -27,12 +27,6 @@ ActiveAdmin.register Award do
       f.input :year
     end
     f.actions
-  end
-
-  controller do
-    def permitted_params
-      params.permit!
-    end
   end
 
 end

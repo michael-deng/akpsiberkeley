@@ -1,5 +1,5 @@
 ActiveAdmin.register Active do
-
+  permit_params :name, :email, :major, :pledge_class, :hometown, :linkedin, :previous_positions, :eboard, :display, :bio
 
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
@@ -14,7 +14,6 @@ ActiveAdmin.register Active do
   #   permitted
   # end
   index do
-    column :id
     column :name
     column :email
     column :major
@@ -29,7 +28,6 @@ ActiveAdmin.register Active do
 
   form do |f|
     f.inputs "Active information" do
-      f.input :id
       f.input :name
       f.input :email
       f.input :major
@@ -43,12 +41,5 @@ ActiveAdmin.register Active do
     end
     f.actions
   end
-
-  controller do
-    def permitted_params
-      params.permit!
-    end
-  end
-
 
 end

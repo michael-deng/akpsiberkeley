@@ -1,5 +1,5 @@
 ActiveAdmin.register CareerEntry do
-
+  permit_params :name, :company, :group, :year, :location, :fulltime_or_intern, :job_category
 
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
@@ -19,8 +19,7 @@ ActiveAdmin.register CareerEntry do
     column :group
     column :year
     column :location
-    column :fulltime
-    column :intern
+    column :fulltime_or_intern
     column :job_category
     actions
   end
@@ -32,18 +31,11 @@ ActiveAdmin.register CareerEntry do
       f.input :group
       f.input :year
       f.input :location
-      f.input :fulltime
-      f.input :intern
+      f.input :fulltime_or_intern, as: :select, collection; ["Internship", "Full-time"]
       f.input :job_category
     end
 
     f.actions
-  end
-
-  controller do
-    def permitted_params
-      params.permit!
-    end
   end
 
 end

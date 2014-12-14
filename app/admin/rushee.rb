@@ -1,5 +1,5 @@
 ActiveAdmin.register Rushee do
-
+  permit_params :name, :major, :gpa, :course1, :course1_grade, :course2, :course2_grade, :course3, :course3_grade, :course4, :course4_grade, :course5, :course5_grade, :course6, :course6_grade, :cut
 
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
@@ -43,12 +43,6 @@ ActiveAdmin.register Rushee do
       f.input :cut
     end
     f.actions
-  end
-
-  controller do
-    def permitted_params
-      params.permit!
-    end
   end
 
 end
