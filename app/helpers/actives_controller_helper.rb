@@ -1,0 +1,2 @@
+module ActivesControllerHelper
+end

@@ -3,4 +3,8 @@ class Rushee < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
+
+  validates :name, presence: true, length: { maxiumum: 50 }
+  validates :email, presence: true, length: { maximum: 255 }
+
 end
