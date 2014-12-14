@@ -5,7 +5,7 @@ class ActivesControllerController < ApplicationController
 	end
 
 	def index
-		@actives = Active.all.sort_by{ |a| a.name.split(' ')[1].downcase }
+		@actives = Active.all.sort_by{ |a| a.name.split(' ')[a.name.split(' ').length - 1].downcase }
 	end
-	
+
 end
