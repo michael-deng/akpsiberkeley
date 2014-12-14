@@ -5,4 +5,15 @@ class Active < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :career_entries, dependent: :destroy
+
+  validates :name, presence: true
+  validates :email, presence: true
+  validates :pledge_class, presence: true
+  validates :hometown, presence: true
+  validates :linkedin, presence: true
+  validates :previous_positions, presence: true
+  validates :eboard, presence: true
+  validates :display, presence: true
+  validates :bio, presence: true
+
 end
