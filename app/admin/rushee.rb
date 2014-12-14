@@ -16,6 +16,7 @@ ActiveAdmin.register Rushee do
   index do
     column :name
     column :email
+    column :hometown
     column :major
     column :gpa
     column :course1
@@ -38,6 +39,7 @@ ActiveAdmin.register Rushee do
     f.inputs "Rushee information" do
       f.input :name
       f.input :email
+      f.input :hometown
       f.input :major
       f.input :gpa
       f.input :cut
