@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141214021414) do
+ActiveRecord::Schema.define(version: 20141214031807) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -44,12 +44,12 @@ ActiveRecord::Schema.define(version: 20141214021414) do
     t.datetime "updated_at"
     t.string   "major"
     t.string   "pledge_class"
-    t.text     "bio"
     t.string   "hometown"
     t.string   "previous_positions"
     t.boolean  "eboard"
     t.boolean  "display"
     t.string   "linkedin"
+    t.text     "biography"
   end
 
   add_index "actives", ["email"], name: "index_actives_on_email", unique: true
