@@ -24,4 +24,4 @@ def secure_token
   end
 end
 
-Calakpsi::Application.config.secret_key_base = secure_token
+Akpsiberkeley::Application.config.secret_key_base = secure_token
