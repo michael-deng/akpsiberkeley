@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141214062853) do
+ActiveRecord::Schema.define(version: 20141223212159) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -46,10 +46,10 @@ ActiveRecord::Schema.define(version: 20141214062853) do
     t.string   "pledge_class"
     t.string   "hometown"
     t.string   "previous_positions"
-    t.boolean  "eboard"
     t.boolean  "display"
     t.string   "linkedin"
     t.text     "biography"
+    t.string   "eboard_position"
   end
 
   add_index "actives", ["email"], name: "index_actives_on_email", unique: true
@@ -110,20 +110,9 @@ ActiveRecord::Schema.define(version: 20141214062853) do
     t.datetime "updated_at"
     t.string   "major"
     t.string   "gpa"
-    t.string   "course1"
-    t.string   "course1_grade"
-    t.string   "course2"
-    t.string   "course2_grade"
-    t.string   "course3"
-    t.string   "course3_grade"
-    t.string   "course4"
-    t.string   "course4_grade"
-    t.string   "course5"
-    t.string   "course5_grade"
-    t.string   "course6"
-    t.string   "course6_grade"
     t.boolean  "cut"
     t.string   "hometown"
+    t.text     "courses_and_grades"
   end
 
   add_index "rushees", ["email"], name: "index_rushees_on_email", unique: true

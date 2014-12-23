@@ -19,18 +19,7 @@ ActiveAdmin.register Rushee do
     column :hometown
     column :major
     column :gpa
-    column :course1
-    column :course1_grade
-    column :course2
-    column :course2_grade
-    column :course3
-    column :course3_grade
-    column :course4
-    column :course4_grade
-    column :course5
-    column :course5_grade
-    column :course6
-    column :course6_grade
+    column :course_and_grades
     column :cut
     actions
   end
