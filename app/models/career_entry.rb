@@ -1,7 +1,9 @@
 class CareerEntry < ActiveRecord::Base
 
+	# Each career entry is linked to an active
 	belongs_to :active
 
+	# These fields have to be filled out when admins or actives creates career entries
 	validates :name, presence: true
 	validates :company, presence: true
 	validates :group, presence: true

@@ -1,3 +1,5 @@
+# Rushee settings in activeadmin
+
 ActiveAdmin.register Rushee do
   permit_params :name, :major, :gpa, :course1, :course1_grade, :course2, :course2_grade, :course3, :course3_grade, :course4, :course4_grade, :course5, :course5_grade, :course6, :course6_grade, :cut
 

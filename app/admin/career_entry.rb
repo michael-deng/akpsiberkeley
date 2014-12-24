@@ -1,3 +1,5 @@
+# Career entry settings in activeadmin
+
 ActiveAdmin.register CareerEntry do
   permit_params :name, :company, :group, :year, :location, :fulltime_or_intern, :job_category
 

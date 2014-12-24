@@ -1,3 +1,5 @@
+# Active settings in activeadmin
+
 ActiveAdmin.register Active do
   permit_params :name, :email, :major, :pledge_class, :hometown, :linkedin, :previous_positions, :eboard, :display, :bio
 
@@ -16,28 +18,29 @@ ActiveAdmin.register Active do
   index do
     column :name
     column :email
+    column :eboard_position
     column :major
     column :pledge_class
     column :hometown
     column :linkedin
     column :previous_positions
-    column :eboard
     column :display
     actions
   end
 
+  # Form for 
   form do |f|
     f.inputs "Active information" do
       f.input :name
       f.input :email
+      f.input :eboard_position
       f.input :major
       f.input :pledge_class
       f.input :hometown
       f.input :linkedin
       f.input :previous_positions
-      f.input :eboard
       f.input :display
-      f.input :bio
+      f.input :biography
     end
     f.actions
   end

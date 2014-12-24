@@ -1,3 +1,5 @@
+# Award settings in activeadmin
+
 ActiveAdmin.register Award do
   permit_params :name, :members, :year
 

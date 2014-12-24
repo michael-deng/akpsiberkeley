@@ -1,4 +1,4 @@
-<!-- Edit page for actives -->
+<!-- Edit profile page for actives -->
 
 <h2>Edit <%= resource_name.to_s.humanize %></h2>
 
@@ -13,6 +13,11 @@
   <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :eboard_position, autofocus: true %>
   </div>
 
   <div class="field">
