@@ -1,6 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+/* Change when the navbar collapses from 768px to 1337px */
 @media (max-width: 1337px) {
   .navbar-header {
     float: none;
@@ -120,6 +121,7 @@ body .content {
 
 /*** CENTER CONTENT CUSTOMIZATIONS ***/
 
+/* Customize container holding the content of the homepage */
 .home-banner {
 	height: calc(100% - 80px);
 	overflow-y: hidden;
@@ -130,6 +132,7 @@ body .content {
   background-size: cover;
 }
 
+/* Customize homepage center shadow box */
 .home-banner div {
 	margin: auto;
   position: absolute;
@@ -142,18 +145,21 @@ body .content {
 	padding-top: 2%;
 }
 
+/* Customize homepage heading */
 .home-banner div h1 {
 	font-size: 380%;
 	font-family: 'Old Standard TT', serif;
 	font-weight: 700;
 }
 
+/* Customize homepage subheading */
 .home-banner div h3 {
 	font-size: 200%;
 	font-family: 'Vollkorn', serif;
 	line-height: 150%;
 }
 
+/* Make homepage heading mobile responsive */
 @media (max-width: 768px) {
 	.home-banner div h1 {
 		font-size: 190%;
