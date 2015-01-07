@@ -1,8 +1,12 @@
 class StaticPagesController < ApplicationController
+  
   def home
   end
 
   def about
+  end
+
+  def rush
   end
 
   def abc
@@ -14,7 +18,7 @@ class StaticPagesController < ApplicationController
   def abventures
   end
 
-  def corporate
+  def faq
   end
 
   def contact
