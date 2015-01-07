@@ -42,23 +42,39 @@ body .content {
 	min-height: 100%;
 }
 
-.content .navbar-bottom {
+.navbar-bottom {
 	bottom: 0;
 	position: absolute;
 	width: 100%;
 	margin: 0;
 	border-radius: 0;
-	text-align: center;
 	height: 60px;
 }
 
-.left-footer-link {
-	
+.navbar-bottom div {
+	text-align: center;
 }
 
-.right-footer-link {
-
+.navbar-bottom div ul {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	float: none;
 }
+
+.navbar-bottom div ul li a {
+	text-decoration: none;
+	margin: 5px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.navbar-bottom div ul li img {
+	margin: 5px;
+	height: 45px;
+	width: auto;
+}
+
 
 /*** CENTER CONTENT CUSTOMIZATIONS ***/
 
