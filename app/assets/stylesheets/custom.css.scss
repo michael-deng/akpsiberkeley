@@ -1,7 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-/*** NAVBAR CUSTOMIZATIONS ***/
+/*** HEADER NAVBAR CUSTOMIZATIONS ***/
 
 /* Squeeze the inner elements of the navbar */
 nav .container-fluid {
@@ -28,4 +28,40 @@ nav .container-fluid {
 /* Position the links */
 .navbar-right {
 	margin-top: 1em;
+}
+
+/*** FOOTER NAVBAR CUSTOMIZATIONS ***/
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%
+}
+
+body .content {
+	min-height: 100%;
+}
+
+.content .navbar-bottom {
+	bottom: 0;
+	position: absolute;
+	width: 100%;
+	margin: 0;
+	border-radius: 0;
+	text-align: center;
+	height: 60px;
+}
+
+.left-footer-link {
+	
+}
+
+.right-footer-link {
+
+}
+
+/*** CENTER CONTENT CUSTOMIZATIONS ***/
+
+.content .container {
+	padding-bottom: 60px;
 }
