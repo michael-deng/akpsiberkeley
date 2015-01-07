@@ -1,18 +1,31 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-/* Positioning for the Alpha Kappa Psi logo in the navbar */
+/*** NAVBAR CUSTOMIZATIONS ***/
 
-.navbar-brand img {
-	height: 2em;
-	width: auto;
-	margin-top: -0.5em;
-}
-
-/* Navbar customizations */
-
+/* Squeeze the inner elements of the navbar */
 nav .container-fluid {
 	padding-right: 5em;
 	padding-left: 5em;
 }
 
+/* Set the height of the navbar */
+.navbar-static-top {
+	height: 80px;
+}
+
+/* Position the Alpha Kappa Psi logo */
+.navbar-brand img {
+	height: 2.5em;
+	width: auto;
+}
+
+/* Remove the underlines of the links */
+.navbar-right li a {
+	text-decoration: none !important;
+}
+
+/* Position the links */
+.navbar-right {
+	margin-top: 1em;
+}

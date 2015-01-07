@@ -6,7 +6,10 @@ class StaticPagesController < ApplicationController
   def about
   end
 
-  def rush
+  def careers
+  end
+
+  def awards
   end
 
   def abc
@@ -15,7 +18,10 @@ class StaticPagesController < ApplicationController
   def bcs
   end
 
-  def abventures
+  def abv
+  end
+
+  def rush
   end
 
   def faq
