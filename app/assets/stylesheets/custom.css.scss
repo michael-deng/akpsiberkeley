@@ -41,6 +41,8 @@ html, body {
 
 body .content {
 	min-height: 100%;
+	height: 100%;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .navbar-bottom {
@@ -80,12 +82,36 @@ body .content {
 /*** CENTER CONTENT CUSTOMIZATIONS ***/
 
 .home-banner {
-	height: auto;
+	height: calc(100% - 80px);
+	overflow-y: hidden;
 	background: image_url("banquet_fa14.png") no-repeat center center fixed;
 	-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.home-banner div {
+	margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+	text-align: center;
+	color: white;
+	height: 250px;
+	width: 530px;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding-top: 2em;
+}
+
+.home-banner div h1 {
+	font-size: 420%;
+	font-family: 'Old Standard TT', serif;
+	font-weight: 700;
+}
+
+.home-banner div h3 {
+	font-family: 'Vollkorn', serif;
+	line-height: 150%;
 }
 
 
