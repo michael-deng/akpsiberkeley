@@ -2,7 +2,7 @@
 @import "bootstrap";
 
 /* Change when the navbar collapses from 768px to 1337px */
-@media (max-width: 1337px) {
+@media (max-width: 1550px) {
   .navbar-header {
     float: none;
   }
@@ -43,14 +43,18 @@
 
 /*** HEADER NAVBAR CUSTOMIZATIONS ***/
 
+.navbar-top {
+    background:transparent;
+}
+
 /* Squeeze the inner elements of the navbar */
 nav .container-fluid {
-	padding-right: 5em;
-	padding-left: 5em;
+	padding-right: 5%;
+	padding-left: 5%;
 }
 
 /* Set the height of the navbar */
-.navbar-static-top {
+.navbar {
 	height: 80px;
 	margin: 0;
 }
@@ -62,12 +66,12 @@ nav .container-fluid {
 }
 
 /* Remove the underlines of the links */
-.navbar-right li a {
+.navbar-nav li a {
 	text-decoration: none !important;
 }
 
 /* Position the links */
-.navbar-right {
+.navbar-nav {
 	margin-top: 1em;
 }
 

@@ -7,6 +7,7 @@ Akpsiberkeley::Application.routes.draw do
 
   resources :actives, only: [:index, :show] do
     resources :career_entries
+    resources :awards
   end
 
   resources :rushees, only: [:index, :show]
