@@ -5,6 +5,9 @@ Akpsiberkeley::Application.routes.draw do
   devise_for :rushees
   devise_for :actives
 
+  resources :career_entries, only: [:index]
+  resources :awards, only: [:index]
+
   resources :actives, only: [:index, :show] do
     resources :career_entries
     resources :awards

@@ -1,0 +1,216 @@
+<div class="container">
+	<h1>Careers</h1>
+	<br>
+	<nav class="nav navbar-default">
+		<div class="container-fluid">
+			<ul class="nav navbar-nav">
+    		<li><%= link_to "2015", careers_path %></li>
+    		<li><%= link_to "2014", careers_path %></li>
+    		<li><%= link_to "2013", careers_path %></li>
+    		<li><%= link_to "2012", careers_path %></li>
+    		<li><%= link_to "2011", careers_path %></li>
+        <li><%= link_to "2010", careers_path %></li>
+      </ul>
+    </div>
+  </nav>
+  <br>
+
+  <% @fullentries = [] %>
+  <% @internentries = [] %>
+  <% for i in 0 ... @careerentries.size %>
+    <% if @careerentries[i].year == @year %>
+      <% if @careerentries[i].fulltime_or_intern == "Full-Time" %>
+        <% @fullentries.push(@careerentries[i]) %>
+      <% end %>
+      <% if @careerentries[i].fulltime_or_intern == "Internship" %>
+        <% @internentries.push(@careerentries[i]) %>
+      <% end %>
+    <% end %>
+  <% end %>
+
+  <% for i in 0 ... @fullentries.size %>
+    <div class="table-responsive">
+      <h3><%= @year %> Full-Time Placements<h3>
+      <br>
+      <table class="table table-condensed">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Company</th>
+            <th>Group</th>
+            <th>Location</th>
+          </tr>
+        </thead>
+        
+        <% if @fullentries[i].job_category == "Investment Banking" %>
+          <tr>
+            <td><b>Investment Banking</b></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><%= @fullentries[i].name %></td>
+            <td><%= @fullentries[i].company %></td>
+            <td><%= @fullentries[i].group %></td>
+            <td><%= @fullentries[i].location %></td>
+          </tr>
+        <% end %>
+
+        <% if @fullentries[i].job_category == "Consulting" %>
+          <tr>
+            <td><b>Consulting</b></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><%= @fullentries[i].name %></td>
+            <td><%= @fullentries[i].company %></td>
+            <td><%= @fullentries[i].group %></td>
+            <td><%= @fullentries[i].location %></td>
+          </tr>
+        <% end %>
+
+        <% if @fullentries[i].job_category == "Finance" %>
+          <tr>
+            <td><b>Finance</b></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><%= @fullentries[i].name %></td>
+            <td><%= @fullentries[i].company %></td>
+            <td><%= @fullentries[i].group %></td>
+            <td><%= @fullentries[i].location %></td>
+          </tr>
+        <% end %>
+
+        <% if @fullentries[i].job_category == "Technology" %>
+          <tr>
+            <td><b>Technology</b></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><%= @fullentries[i].name %></td>
+            <td><%= @fullentries[i].company %></td>
+            <td><%= @fullentries[i].group %></td>
+            <td><%= @fullentries[i].location %></td>
+          </tr>
+        <% end %>
+
+        <% if @fullentries[i].job_category == "Other" %>
+          <tr>
+            <td><b>Other</b></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><%= @fullentries[i].name %></td>
+            <td><%= @fullentries[i].company %></td>
+            <td><%= @fullentries[i].group %></td>
+            <td><%= @fullentries[i].location %></td>
+          </tr>
+        <% end %>
+      </table>
+    </div>
+  <% end %>
+
+  <br>
+
+  <% for i in 0 ... @internentries.size %>
+    <div class="table-responsive">
+      <h3><%= @year %> Internships<h3>
+      <br>
+      <table class="table table-condensed">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Company</th>
+            <th>Group</th>
+            <th>Location</th>
+          </tr>
+        </thead>
+
+        <% if @internentries[i].job_category == "Investment Banking" %>
+          <tr>
+            <td><b>Investment Banking</b></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><%= @internentries[i].name %></td>
+            <td><%= @internentries[i].company %></td>
+            <td><%= @internentries[i].group %></td>
+            <td><%= @internentries[i].location %></td>
+          </tr>
+        <% end %>
+
+        <% if @internentries[i].job_category == "Consulting" %>
+          <tr>
+            <td><b>Consulting</b></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><%= @internentries[i].name %></td>
+            <td><%= @internentries[i].company %></td>
+            <td><%= @internentries[i].group %></td>
+            <td><%= @internentries[i].location %></td>
+          </tr>
+        <% end %>
+
+        <% if @internentries[i].job_category == "Finance" %>
+          <tr>
+            <td><b>Finance</b></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><%= @internentries[i].name %></td>
+            <td><%= @internentries[i].company %></td>
+            <td><%= @internentries[i].group %></td>
+            <td><%= @internentries[i].location %></td>
+          </tr>
+        <% end %>
+
+        <% if @internentries[i].job_category == "Technology" %>
+          <tr>
+            <td><b>Technology</b></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><%= @internentries[i].name %></td>
+            <td><%= @internentries[i].company %></td>
+            <td><%= @internentries[i].group %></td>
+            <td><%= @internentries[i].location %></td>
+          </tr>
+        <% end %>
+
+        <% if @internentries[i].job_category == "Other" %>
+          <tr>
+            <td><b>Other</b></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><%= @internentries[i].name %></td>
+            <td><%= @internentries[i].company %></td>
+            <td><%= @internentries[i].group %></td>
+            <td><%= @internentries[i].location %></td>
+          </tr>
+        <% end %>
+      </table>
+    </div>
+  <% end %>
+</div>

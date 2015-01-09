@@ -7,6 +7,7 @@ class StaticPagesController < ApplicationController
   end
 
   def careers
+    @careerentries = CareerEntry.all
   end
 
   def awards
