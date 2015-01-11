@@ -14,6 +14,7 @@ gem 'devise'
 gem 'activeadmin', github: 'activeadmin'
 gem 'simple_form'
 gem 'autoprefixer-rails'
+gem "paperclip", "~> 4.2"
 
 group :development, :test do
   gem 'sqlite3', '1.3.8'
