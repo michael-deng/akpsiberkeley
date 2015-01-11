@@ -48,7 +48,7 @@
     background:transparent;
     border: none;
     height: 80px;
-    margin: 0;
+    margin-bottom: -80px;
 }
 
 /* Squeeze the inner elements of the navbar */
@@ -76,6 +76,11 @@ nav .container-fluid {
 
 /*** FOOTER NAVBAR CUSTOMIZATIONS ***/
 
+.navbar-bottom {
+	border: none;
+	margin-bottom: 0;
+}
+
 .navbar-bottom div ul li a {
 	text-decoration: none;
 }
@@ -89,13 +94,8 @@ nav .container-fluid {
 
 /*** CENTER CONTENT CUSTOMIZATIONS ***/
 
-.navbar {
-	margin-bottom: -80px;
-}
-
-body {
-	padding: 0;
-	margin: 0;
+html, body {
+	height: 100%;
 }
 
 .main-content {
@@ -103,20 +103,23 @@ body {
 }
 
 /* Customize container holding the content of the homepage */
-.home-banner {
-	background: image_url("banquet_fa14.png") no-repeat center center fixed;
+
+.main-content {
+	height: 100%;
+	background: image_url("banquet_fa14.png") no-repeat center center;
 	-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
-/* Make homepage heading mobile responsive */
-@media (max-width: 768px) {
-	.home-banner div h1 {
-		font-size: 190%;
-	}
-	.home-banner div h3 {
-		font-size: 100%;
-	}
-}
+
+// /* Make homepage heading mobile responsive */
+// @media (max-width: 768px) {
+// 	.home-banner div h1 {
+// 		font-size: 190%;
+// 	}
+// 	.home-banner div h3 {
+// 		font-size: 100%;
+// 	}
+// }
