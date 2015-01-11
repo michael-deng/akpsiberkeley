@@ -12,4 +12,7 @@ class CareerEntry < ActiveRecord::Base
 	validates :location, presence: true
 	validates :job_category, presence: true
 
+	validates_inclusion_of :fulltime_or_intern, :in => ["Full-time", "Internship"]
+	validates_inclusion_of :job_category, :in => ["Investment Banking", "Consulting", "Finance", "Technology", "Other"]
+
 end

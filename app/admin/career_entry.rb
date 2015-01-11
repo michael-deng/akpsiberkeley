@@ -18,11 +18,11 @@ ActiveAdmin.register CareerEntry do
   index do
     column :name
     column :company
-    column :group
-    column :year
-    column :location
-    column :fulltime_or_intern
     column :job_category
+    column :group
+    column :location
+    column :year
+    column :fulltime_or_intern
     actions
   end
 
@@ -30,11 +30,11 @@ ActiveAdmin.register CareerEntry do
     f.inputs "Career information" do
       f.input :name
       f.input :company
+      f.input :job_category, as: :select, collection: ["Investment Banking", "Consulting", "Finance", "Technology", "Other"]
       f.input :group
-      f.input :year
       f.input :location
-      f.input :fulltime_or_intern, as: :select, collection: ["Internship", "Full-time"]
-      f.input :job_category
+      f.input :year
+      f.input :fulltime_or_intern, as: :select, collection: ["Full-time", "Internship"]
     end
 
     f.actions
