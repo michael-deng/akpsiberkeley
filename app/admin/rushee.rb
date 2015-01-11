@@ -1,7 +1,7 @@
 # Rushee settings in activeadmin
 
 ActiveAdmin.register Rushee do
-  permit_params :name, :major, :gpa, :course1, :course1_grade, :course2, :course2_grade, :course3, :course3_grade, :course4, :course4_grade, :course5, :course5_grade, :course6, :course6_grade, :cut
+  permit_params :name, :email, :hometown, :major, :gpa, :courses_and_grades, :cut, :password
 
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
@@ -21,7 +21,7 @@ ActiveAdmin.register Rushee do
     column :hometown
     column :major
     column :gpa
-    column :course_and_grades
+    column :courses_and_grades
     column :cut
     actions
   end
@@ -33,7 +33,9 @@ ActiveAdmin.register Rushee do
       f.input :hometown
       f.input :major
       f.input :gpa
+      f.input :courses_and_grades
       f.input :cut
+      f.input :password
     end
     f.actions
   end

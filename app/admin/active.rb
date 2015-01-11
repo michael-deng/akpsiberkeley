@@ -1,7 +1,7 @@
 # Active settings in activeadmin
 
 ActiveAdmin.register Active do
-  permit_params :name, :email, :major, :pledge_class, :hometown, :linkedin, :previous_positions, :eboard, :display, :bio
+  permit_params :name, :email, :major, :pledge_class, :hometown, :linkedin, :previous_positions, :eboard_position, :display, :biography, :password
 
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
@@ -18,12 +18,12 @@ ActiveAdmin.register Active do
   index do
     column :name
     column :email
-    column :eboard_position
     column :major
-    column :pledge_class
     column :hometown
-    column :linkedin
+    column :eboard_position
     column :previous_positions
+    column :pledge_class
+    column :linkedin
     column :display
     actions
   end
@@ -33,14 +33,15 @@ ActiveAdmin.register Active do
     f.inputs "Active information" do
       f.input :name
       f.input :email
-      f.input :eboard_position
       f.input :major
-      f.input :pledge_class
       f.input :hometown
-      f.input :linkedin
+      f.input :eboard_position
       f.input :previous_positions
+      f.input :pledge_class
+      f.input :linkedin
       f.input :display
       f.input :biography
+      f.input :password
     end
     f.actions
   end
