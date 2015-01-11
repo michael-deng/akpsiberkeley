@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141223212159) do
+ActiveRecord::Schema.define(version: 20150111065526) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -50,6 +50,10 @@ ActiveRecord::Schema.define(version: 20141223212159) do
     t.string   "linkedin"
     t.text     "biography"
     t.string   "eboard_position"
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
+    t.datetime "photo_updated_at"
   end
 
   add_index "actives", ["email"], name: "index_actives_on_email", unique: true
@@ -113,6 +117,10 @@ ActiveRecord::Schema.define(version: 20141223212159) do
     t.boolean  "cut"
     t.string   "hometown"
     t.text     "courses_and_grades"
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
+    t.datetime "photo_updated_at"
   end
 
   add_index "rushees", ["email"], name: "index_rushees_on_email", unique: true
