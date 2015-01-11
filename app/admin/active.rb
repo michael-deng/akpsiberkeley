@@ -42,6 +42,7 @@ ActiveAdmin.register Active do
       f.input :display
       f.input :biography
       f.input :password
+      f.input :photo
     end
     f.actions
   end

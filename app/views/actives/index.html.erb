@@ -6,7 +6,7 @@
 
 	<ul>
 		<% @actives.each do |a| %>
-			<%= link_to image_tag(active.photograph.url!!!!!!!!!!!!) %>
+			<%= link_to image_tag(active.photograph.url(:small) %>
 			<h3><%= active.name %><h3>
 		<% end %>
 	</ul>

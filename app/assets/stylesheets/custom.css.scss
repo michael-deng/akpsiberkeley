@@ -16,7 +16,7 @@
   .navbar-collapse {
     border-top: 1px solid transparent;
     box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-    background-color: white;
+    background: white;
   }
   .navbar-fixed-top {
 		top: 0;
@@ -41,10 +41,14 @@
 	}
 }
 
+
 /*** HEADER NAVBAR CUSTOMIZATIONS ***/
 
 .navbar-top {
     background:transparent;
+    border: none;
+    height: 80px;
+    margin: 0;
 }
 
 /* Squeeze the inner elements of the navbar */
@@ -53,15 +57,9 @@ nav .container-fluid {
 	padding-left: 5%;
 }
 
-/* Set the height of the navbar */
-.navbar {
-	height: 80px;
-	margin: 0;
-}
-
 /* Position the Alpha Kappa Psi logo */
 .navbar-brand img {
-	height: 2.5em;
+	height: 45px;
 	width: auto;
 }
 
@@ -72,48 +70,14 @@ nav .container-fluid {
 
 /* Position the links */
 .navbar-nav {
-	margin-top: 1em;
+	margin-top: 15px;
 }
+
 
 /*** FOOTER NAVBAR CUSTOMIZATIONS ***/
 
-html, body {
-	margin: 0;
-	padding: 0;
-	height: 100%
-}
-
-body .content {
-	min-height: 100%;
-	height: 100%;
-	font-family: 'Open Sans', sans-serif;
-}
-
-.navbar-bottom {
-	bottom: 0;
-	position: absolute;
-	width: 100%;
-	margin: 0;
-	border-radius: 0;
-	height: 67px;
-}
-
-.navbar-bottom div {
-	text-align: center;
-}
-
-.navbar-bottom div ul {
-	display: inline-block;
-	margin: 0;
-	padding: 0;
-	float: none;
-}
-
 .navbar-bottom div ul li a {
 	text-decoration: none;
-	margin: 5px;
-	margin-left: 20px;
-	margin-right: 20px;
 }
 
 .navbar-bottom div ul li img {
@@ -125,42 +89,26 @@ body .content {
 
 /*** CENTER CONTENT CUSTOMIZATIONS ***/
 
+.navbar {
+	margin-bottom: -80px;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.main-content {
+	margin-top: 0px;
+}
+
 /* Customize container holding the content of the homepage */
 .home-banner {
-	height: calc(100% - 80px);
-	overflow-y: hidden;
 	background: image_url("banquet_fa14.png") no-repeat center center fixed;
 	-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-
-/* Customize homepage center shadow box */
-.home-banner div {
-	margin: auto;
-  position: absolute;
-  top: 0; left: 0; bottom: 5%; right: 0;
-	text-align: center;
-	color: white;
-	height: 35%;
-	width: 35%;
-	background-color: rgba(0, 0, 0, 0.5);
-	padding-top: 2%;
-}
-
-/* Customize homepage heading */
-.home-banner div h1 {
-	font-size: 380%;
-	font-family: 'Old Standard TT', serif;
-	font-weight: 700;
-}
-
-/* Customize homepage subheading */
-.home-banner div h3 {
-	font-size: 200%;
-	font-family: 'Vollkorn', serif;
-	line-height: 150%;
 }
 
 /* Make homepage heading mobile responsive */

@@ -35,6 +35,7 @@ ActiveAdmin.register Rushee do
       f.input :gpa
       f.input :courses_and_grades
       f.input :cut
+      f.input :photo
       f.input :password
     end
     f.actions
