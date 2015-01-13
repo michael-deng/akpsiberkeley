@@ -68,6 +68,12 @@ html, body {
   color: white;
 }
 
+.dark-layer {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 
 
 /*** HEADER NAVBAR CUSTOMIZATIONS ***/
@@ -93,8 +99,9 @@ nav .container-fluid {
 }
 
 /* Remove the underlines of the links */
-.navbar-nav li a {
-	text-decoration: none !important;
+.navbar-top .navbar-collapse .navbar-nav li a {
+  color: white;
+	text-decoration: none;
 }
 
 /* Position the links */
@@ -111,11 +118,11 @@ nav .container-fluid {
 	margin-bottom: 0;
 }
 
-.navbar-bottom div ul li a {
+.navbar-bottom ul li a {
 	text-decoration: none;
 }
 
-.navbar-bottom div ul li img {
+.navbar-bottom ul li img {
 	margin: 5px;
 	height: 45px;
 	width: auto;
@@ -173,6 +180,7 @@ nav .container-fluid {
 .banner-text .navbar-careers .navbar-nav a {
   color: white;
   font-size: 50%;
+  text-decoration: none;
 }
 
 #careers-banner {
