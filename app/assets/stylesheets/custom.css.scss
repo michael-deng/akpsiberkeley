@@ -42,13 +42,39 @@
 }
 
 
+
+/*** GENERAL CUSTOMIZATIONS ***/
+
+html, body {
+	height: 100%;
+}
+
+.banner {
+	height: 30vw;
+  width: 100%;
+	min-height: 480px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+.banner-text {
+  top: 40%;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+}
+
+
+
 /*** HEADER NAVBAR CUSTOMIZATIONS ***/
 
 .navbar-top {
-    background:transparent;
-    border: none;
-    height: 80px;
-    margin-bottom: -80px;
+  background:transparent;
+  border: none;
+  height: 80px;
+  margin-bottom: -80px;
+  z-index: 100;
 }
 
 /* Squeeze the inner elements of the navbar */
@@ -74,6 +100,7 @@ nav .container-fluid {
 }
 
 
+
 /*** FOOTER NAVBAR CUSTOMIZATIONS ***/
 
 .navbar-bottom {
@@ -92,19 +119,12 @@ nav .container-fluid {
 }
 
 
-/*** CENTER CONTENT CUSTOMIZATIONS ***/
 
-html, body {
-	height: 100%;
-}
-
-.main-content {
-	margin-top: 0px;
-}
+/*** HOME PAGE CUSTOMIZATIONS ***/
 
 /* Customize container holding the content of the homepage */
 
-.main-content {
+.home {
 	height: 100%;
 	background: image_url("banquet_fa14.png") no-repeat center center;
 	-webkit-background-size: cover;
@@ -123,3 +143,38 @@ html, body {
 // 		font-size: 100%;
 // 	}
 // }
+
+
+
+/*** ACTIVE BROTHERS PAGE CUSTOMIZATIONS ***/
+
+
+
+/*** CAREERS PAGE CUSTOMIZATIONS ***/
+
+.navbar-careers {
+  background: none;
+  width: 100%;
+}
+
+.navbar-careers ul {
+  width: 100%;
+  text-align: center;
+}
+
+.navbar-careers ul li {
+  display: inline-block;
+  float: none;
+}
+
+#careers-banner {
+  background: image_url("rush_banner.png") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
+
