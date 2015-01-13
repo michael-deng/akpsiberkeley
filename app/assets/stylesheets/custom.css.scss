@@ -49,6 +49,10 @@ html, body {
 	height: 100%;
 }
 
+.center-content {
+  background: #3D3D3D;
+}
+
 .banner {
 	height: 30vw;
   width: 100%;
@@ -115,7 +119,17 @@ nav .container-fluid {
 
 .navbar-bottom {
 	border: none;
-	margin-bottom: 0;
+}
+
+.navbar-bottom ul {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.navbar-bottom ul li {
+  display: inline-block;
+  float: none;
 }
 
 .navbar-bottom ul li a {
@@ -191,6 +205,12 @@ nav .container-fluid {
   background-size: cover;
 }
 
+.careers-table-wrapper {
+  width: 80%;
+}
 
+.careers-table-wrapper .careers-table {
+  width: 500px;
+}
 
 
