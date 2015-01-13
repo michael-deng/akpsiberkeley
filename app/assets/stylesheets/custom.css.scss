@@ -45,12 +45,8 @@
 
 /*** GENERAL CUSTOMIZATIONS ***/
 
-html, body {
-	height: 100%;
-}
-
 .center-content {
-  background: #3D3D3D;
+  background: white;
 }
 
 .banner {
@@ -207,10 +203,8 @@ nav .container-fluid {
 
 .careers-table-wrapper {
   width: 80%;
-}
-
-.careers-table-wrapper .careers-table {
-  width: 500px;
+  margin: auto;
+  text-align: center;
 }
 
 
