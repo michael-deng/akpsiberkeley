@@ -59,10 +59,13 @@ html, body {
 }
 
 .banner-text {
-  top: 40%;
+  top: 30%;
   width: 100%;
   position: absolute;
   text-align: center;
+  font-family: "Bebas", sans-serif;
+  font-size: 100px;
+  color: white;
 }
 
 
@@ -165,6 +168,11 @@ nav .container-fluid {
 .navbar-careers ul li {
   display: inline-block;
   float: none;
+}
+
+.banner-text .navbar-careers .navbar-nav a {
+  color: white;
+  font-size: 50%;
 }
 
 #careers-banner {
