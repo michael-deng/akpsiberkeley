@@ -4,7 +4,9 @@
   <div class="banner" id="careers-banner">
     <div class="dark-layer">
     	<div class="banner-text">
-        Careers
+        CAREERS
+        <hr>
+        <p class="caption"><b>Our brothers find employment with top companies in a wide variety of high-impact industries</p>
       	<nav class="nav navbar-default navbar-careers">
     			<ul class="nav navbar-nav">
         		<li><%= link_to "2015", career_entries_path(:year => "2015") %></li>
@@ -78,7 +80,7 @@
 
     <% if @full_entries.size > 0 %>
       <div class="table-responsive careers-table">
-        <h3><%= @year %> Full-time Placements</h3>
+        <h3><%= @year %> Full-times</h3>
         <br>
         <table class="table table-condensed">
           <thead>
@@ -187,7 +189,7 @@
 
     <% if @intern_entries.size > 0 %>
       <div class="table-responsive careers-table">
-        <h3><%= @year %> Internship Placements</h3>
+        <h3><%= @year %> Internships</h3>
         <br>
         <table class="table table-condensed">
           <thead>

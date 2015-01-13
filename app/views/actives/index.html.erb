@@ -1,13 +1,34 @@
 <% provide(:title, "Active Brothers") %>
 
-<div class="container">
-	<h1>Active Brothers</h1>
-	<br>
+<div class="center-content">
+  <div class="banner" id="actives-banner">
+    <div class="dark-layer">
+    	<div class="banner-text">
+        ACTIVE BROTHERS
+      </div>
+    </div>
+  </div>
 
-	<ul>
-		<% @actives.each do |a| %>
-			<%= link_to image_tag(active.photograph.url(:small) %>
-			<h3><%= active.name %><h3>
-		<% end %>
-	</ul>
+  <br>
+
+  <div class="actives-wrapper">
+		<ul class="actives-thumbnails">
+			<% @actives.each do |a| %>
+				<% if (a.display && a.photo.exists?) %>
+					<li>
+						<%= link_to image_tag(a.photo.url(:small)) %>
+						<p><%= a.name %></p>
+					</li>
+				<% end %>
+			<% end %>
+		</ul>
+
+		<ul>
+			<% @actives.each do |a| %>
+				<% if (a.display && !a.photo.exists?) %>
+					<li><%= a.name %></li>
+				<% end %>
+			<% end %>
+		</ul>
+	</div>
 </div>

@@ -59,13 +59,28 @@
 }
 
 .banner-text {
-  top: 30%;
+  top: 35%;
   width: 100%;
   position: absolute;
   text-align: center;
-  font-family: "Bebas", sans-serif;
-  font-size: 100px;
+  font-family: 'NexaLight', sans-serif;
+  font-weight: 300;
+  font-size: 120px;
   color: white;
+  line-height: 80px;
+}
+
+.banner-text .caption {
+  font-size: 15%;
+}
+
+.banner-text hr {
+  margin-top: 40px;
+  border: none;
+  width: 10%;
+  height: 2px;
+  background-color: #006cb6;
+  color: #006cb6;
 }
 
 .dark-layer {
@@ -84,6 +99,7 @@
   height: 80px;
   margin-bottom: -80px;
   z-index: 100;
+  font-family: "NexaLight", sans-serif;
 }
 
 /* Squeeze the inner elements of the navbar */
@@ -116,6 +132,7 @@ nav .container-fluid {
 .navbar-bottom {
 	border: none;
   margin: 0;
+  font-family: "NexaLight", sans-serif;
 }
 
 .navbar-bottom ul {
@@ -169,6 +186,21 @@ nav .container-fluid {
 
 /*** ACTIVE BROTHERS PAGE CUSTOMIZATIONS ***/
 
+#actives-banner {
+  background: image_url("brotherhood_banner.png") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.actives-thumbnails {
+  text-align: center;
+}
+
+.actives-thumbnails li {
+  display: inline-block;
+}
 
 
 /*** CAREERS PAGE CUSTOMIZATIONS ***/
@@ -190,7 +222,7 @@ nav .container-fluid {
 
 .banner-text .navbar-careers .navbar-nav a {
   color: white;
-  font-size: 50%;
+  font-size: 20%;
   text-decoration: none;
 }
 
@@ -206,6 +238,7 @@ nav .container-fluid {
   width: 80%;
   margin: auto;
   text-align: center;
+  font-family: "NexaLight", sans-serif;
 }
 
 .careers-table .table thead tr th {
