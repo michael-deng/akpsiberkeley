@@ -19,63 +19,66 @@
     </div>
   </div>
 
-  <div class="careers-table-wrapper">
-    <% @full_entries = [] %>
-    <% @intern_entries = [] %>
-    <% @full_banking_entries = [] %>
-    <% @intern_banking_entries = [] %>
-    <% @full_consulting_entries = [] %>
-    <% @intern_consulting_entries = [] %>
-    <% @full_finance_entries = [] %>
-    <% @intern_finance_entries = [] %>
-    <% @full_technology_entries = [] %>
-    <% @intern_technology_entries = [] %>
-    <% @full_other_entries = [] %>
-    <% @intern_other_entries = [] %>
-    <% for i in 0 ... @careerentries.size %>
-      <% if @careerentries[i].year == @year %>
-        <% if @careerentries[i].fulltime_or_intern == "Full-Time" %>
-          <% @full_entries.push(@careerentries[i]) %>
-          <% if @careerentries[i].job_category == "Investment Banking" %>
-            <% @full_banking_entries.push(@careerentries[i]) %>
-          <% end %>
-          <% if @careerentries[i].job_category == "Consulting" %>
-            <% @full_consulting_entries.push(@careerentries[i]) %>
-          <% end %>
-          <% if @careerentries[i].job_category == "Finance" %>
-            <% @full_finance_entries.push(@careerentries[i]) %>
-          <% end %>
-          <% if @careerentries[i].job_category == "Technology" %>
-            <% @full_technology_entries.push(@careerentries[i]) %>
-          <% end %>
-          <% if @careerentries[i].job_category == "Other" %>
-            <% @full_other_entries.push(@careerentries[i]) %>
-          <% end %>
+  <br>
+
+  <% @full_entries = [] %>
+  <% @intern_entries = [] %>
+  <% @full_banking_entries = [] %>
+  <% @intern_banking_entries = [] %>
+  <% @full_consulting_entries = [] %>
+  <% @intern_consulting_entries = [] %>
+  <% @full_finance_entries = [] %>
+  <% @intern_finance_entries = [] %>
+  <% @full_technology_entries = [] %>
+  <% @intern_technology_entries = [] %>
+  <% @full_other_entries = [] %>
+  <% @intern_other_entries = [] %>
+  <% for i in 0 ... @careerentries.size %>
+    <% if @careerentries[i].year == @year %>
+      <% if @careerentries[i].fulltime_or_intern == "Full-time" %>
+        <% @full_entries.push(@careerentries[i]) %>
+        <% if @careerentries[i].job_category == "Investment Banking" %>
+          <% @full_banking_entries.push(@careerentries[i]) %>
         <% end %>
-        <% if @careerentries[i].fulltime_or_intern == "Internship" %>
-          <% @intern_entries.push(@careerentries[i]) %>
-          <% if @careerentries[i].job_category == "Investment Banking" %>
-            <% @intern_banking_entries.push(@careerentries[i]) %>
-          <% end %>
-          <% if @careerentries[i].job_category == "Consulting" %>
-            <% @intern_consulting_entries.push(@careerentries[i]) %>
-          <% end %>
-          <% if @careerentries[i].job_category == "Finance" %>
-            <% @intern_finance_entries.push(@careerentries[i]) %>
-          <% end %>
-          <% if @careerentries[i].job_category == "Technology" %>
-            <% @intern_technology_entries.push(@careerentries[i]) %>
-          <% end %>
-          <% if @careerentries[i].job_category == "Other" %>
-            <% @intern_other_entries.push(@careerentries[i]) %>
-          <% end %>
+        <% if @careerentries[i].job_category == "Consulting" %>
+          <% @full_consulting_entries.push(@careerentries[i]) %>
+        <% end %>
+        <% if @careerentries[i].job_category == "Finance" %>
+          <% @full_finance_entries.push(@careerentries[i]) %>
+        <% end %>
+        <% if @careerentries[i].job_category == "Technology" %>
+          <% @full_technology_entries.push(@careerentries[i]) %>
+        <% end %>
+        <% if @careerentries[i].job_category == "Other" %>
+          <% @full_other_entries.push(@careerentries[i]) %>
+        <% end %>
+      <% end %>
+      <% if @careerentries[i].fulltime_or_intern == "Internship" %>
+        <% @intern_entries.push(@careerentries[i]) %>
+        <% if @careerentries[i].job_category == "Investment Banking" %>
+          <% @intern_banking_entries.push(@careerentries[i]) %>
+        <% end %>
+        <% if @careerentries[i].job_category == "Consulting" %>
+          <% @intern_consulting_entries.push(@careerentries[i]) %>
+        <% end %>
+        <% if @careerentries[i].job_category == "Finance" %>
+          <% @intern_finance_entries.push(@careerentries[i]) %>
+        <% end %>
+        <% if @careerentries[i].job_category == "Technology" %>
+          <% @intern_technology_entries.push(@careerentries[i]) %>
+        <% end %>
+        <% if @careerentries[i].job_category == "Other" %>
+          <% @intern_other_entries.push(@careerentries[i]) %>
         <% end %>
       <% end %>
     <% end %>
+  <% end %>
+
+  <div class="careers-table-wrapper">
 
     <% if @full_entries.size > 0 %>
       <div class="table-responsive careers-table">
-        <h3><%= @year %> Full-Time Placements<h3>
+        <h3><%= @year %> Full-time Placements</h3>
         <br>
         <table class="table table-condensed">
           <thead>
@@ -184,7 +187,7 @@
 
     <% if @intern_entries.size > 0 %>
       <div class="table-responsive careers-table">
-        <h3><%= @year %> Internship Placements<h3>
+        <h3><%= @year %> Internship Placements</h3>
         <br>
         <table class="table table-condensed">
           <thead>
@@ -289,4 +292,5 @@
       </div>
     <% end %>
   </div>
+  <br>
 </div>

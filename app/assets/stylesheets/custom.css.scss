@@ -115,6 +115,7 @@ nav .container-fluid {
 
 .navbar-bottom {
 	border: none;
+  margin: 0;
 }
 
 .navbar-bottom ul {
@@ -207,4 +208,7 @@ nav .container-fluid {
   text-align: center;
 }
 
+.careers-table .table thead tr th {
+  background: none;
+}
 
