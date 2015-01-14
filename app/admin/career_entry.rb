@@ -16,6 +16,7 @@ ActiveAdmin.register CareerEntry do
   #   permitted
   # end
   index do
+    id_column
     column :name
     column :company
     column :job_category

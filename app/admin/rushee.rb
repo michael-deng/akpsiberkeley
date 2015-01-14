@@ -16,6 +16,7 @@ ActiveAdmin.register Rushee do
   #   permitted
   # end
   index do
+    id_column
     column :name
     column :email
     column :major

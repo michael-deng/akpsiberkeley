@@ -16,6 +16,7 @@ ActiveAdmin.register Active do
   #   permitted
   # end
   index do
+    id_column
     column :name
     column :email
     column :major

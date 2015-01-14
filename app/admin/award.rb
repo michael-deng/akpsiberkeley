@@ -16,6 +16,7 @@ ActiveAdmin.register Award do
   #   permitted
   # end
   index do
+    id_column
     column :name
     column :members
     column :year
