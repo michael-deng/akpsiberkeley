@@ -21,11 +21,11 @@ ActiveAdmin.register Active do
     column :email
     column :major
     column :hometown
-    column :eboard_position
+    column "Executive Board Position", :eboard_position
     column :previous_positions
     column :pledge_class
-    column :linkedin
-    column :display
+    column "LinkedIn Url", :linkedin
+    column "Show On Brothers Page", :display
     actions
   end
 
@@ -36,11 +36,11 @@ ActiveAdmin.register Active do
       f.input :email
       f.input :major
       f.input :hometown
-      f.input :eboard_position
+      f.input :eboard_position, :label => "Executive board position"
       f.input :previous_positions
       f.input :pledge_class
-      f.input :linkedin
-      f.input :display
+      f.input :linkedin, :label => "LinkedIn url"
+      f.input :display, :label => "Show on brothers page"
       f.input :biography
       f.input :password
       f.input :photo

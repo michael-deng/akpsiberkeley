@@ -23,7 +23,8 @@ ActiveAdmin.register CareerEntry do
     column :group
     column :location
     column :year
-    column :fulltime_or_intern
+    column "Full-time/Internship", :fulltime_or_intern
+    column "Active Id", :active_id
     actions
   end
 
@@ -35,7 +36,7 @@ ActiveAdmin.register CareerEntry do
       f.input :group
       f.input :location
       f.input :year
-      f.input :fulltime_or_intern, as: :select, collection: ["Full-time", "Internship"]
+      f.input :fulltime_or_intern, :label => "Full-time/Internship", as: :select, collection: ["Full-time", "Internship"]
     end
 
     f.actions
