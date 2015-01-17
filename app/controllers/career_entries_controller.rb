@@ -1,7 +1,7 @@
 class CareerEntriesController < ApplicationController
 
-	before_action :authenticate_active!, only [:new, :create]
-	before_action :correct_active, only [:edit, :update, :destroy]
+	before_action :authenticate_active!, only: [:new, :create]
+	before_action :correct_active, only: [:edit, :update, :destroy]
 	
 	def index
 		@careerentries = CareerEntry.all
@@ -44,6 +44,7 @@ class CareerEntriesController < ApplicationController
 		@careerentry.destroy
 		flash[:success] = "Your career entry has been successfully deleted."
 		redirect_to request.referrer || root_url
+	end
 
 	private
 
