@@ -4,7 +4,7 @@ class CareerEntriesController < ApplicationController
 	before_action :correct_active, only: [:edit, :update, :destroy]
 	
 	def index
-		@careerentries = CareerEntry.all
+		@careerentries = CareerEntry.all.sort_by{ |a| a.name.split(' ')[a.name.split(' ').length - 1].downcase }
 		@year = params[:year].to_i
 	end
 
