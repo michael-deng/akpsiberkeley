@@ -102,19 +102,19 @@
   font-family: "cyntho_proregular", sans-serif;
 }
 
-/* Squeeze the inner elements of the navbar */
+// Squeeze the inner elements of the navbar
 nav .container-fluid {
 	padding-right: 5%;
 	padding-left: 5%;
 }
 
-/* Position the Alpha Kappa Psi logo */
+// Position the Alpha Kappa Psi logo
 .navbar-brand img {
 	height: 45px;
 	width: auto;
 }
 
-/* Remove the underlines of the links */
+// Remove the underlines of the links
 .navbar-top .navbar-collapse .navbar-nav li a {
   color: white;
 	text-decoration: none;
@@ -124,7 +124,7 @@ nav .container-fluid {
   color: #006cb6;
 }
 
-/* Position the links */
+// Position the links
 .navbar-nav {
 	margin-top: 15px;
 }
@@ -264,8 +264,25 @@ nav .container-fluid {
 
 /*** Rush FAQ Page Customizations ***/
 
-.rush-faq-wrapper {
+.faq-wrapper {
   width: 80%;
   margin: auto;
   font-family: "cyntho_proregular", sans-serif;
+}
+
+// Customize the list of questions on the rush page
+.faq-wrapper .faq-ul {
+  text-align: center;
+  list-style-type: none;
+}
+
+// Customize the list of questions on the rush page
+.faq-wrapper .faq-ul a {
+  color: black;
+  text-decoration: none;
+}
+
+// Customize the content of the questions on the rush page
+.faq-wrapper a {
+  color: black;
 }
