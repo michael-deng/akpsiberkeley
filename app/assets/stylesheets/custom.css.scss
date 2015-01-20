@@ -1,7 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-/* Change when the navbar collapses from 768px to 1337px */
+/* Change when the navbar collapses from 768px to 1000px */
 @media (max-width: 1000px) {
   .navbar-header {
     float: none;
@@ -80,7 +80,7 @@
   width: 10%;
   height: 2px;
   background-color: #006cb6;
-  color: #006cb6;
+  color: #00acee;
 }
 
 .dark-layer {
@@ -253,11 +253,16 @@ nav .container-fluid {
 
 .careers-table .table thead tr th {
   background: none;
-  font-size: 16px;
+  font-size: 14px;
+  border-bottom-width: 2px;
+  width: 25%;
+  //border-color: #00acee;
 }
 
-.careers-table .table tr td b {
+
+.careers-table .table .subheading td {
   font-size: 14px;
+  //border-bottom: 2px solid lightgrey;
 }
 
 
