@@ -1,0 +1,218 @@
+<% provide(:title, "Awards") %>
+
+<div class="center-content">
+  <div class="banner" id="actives-banner">
+    <div class="dark-layer">
+    	<div class="banner-text">
+        AWARDS
+        <hr>
+        <p class="caption">Our brothers have received widespread recognition in investment banking, consulting and technology competitions around campus and around the world</p>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <% @awards_2015 = [] %>
+  <% @awards_2014 = [] %>
+  <% @awards_2013 = [] %>
+  <% @awards_2012 = [] %>
+  <% @awards_2011 = [] %>
+  <% @awards_2010 = [] %>
+  <% @awards_2009 = [] %>
+  <% @awards_2008 = [] %>
+  <% @awards_2007 = [] %>
+  <% @awards_2006 = [] %>
+  <% for i in 0 ... @awards.size %>
+  	<% if i @awards[i].year == 2015 %>
+  		<% @awards_2015.push(@awards[i]) %>
+  	<% end %>
+  	<% if i @awards[i].year == 2014 %>
+  		<% @awards_2014.push(@awards[i]) %>
+  	<% end %>
+  	<% if i @awards[i].year == 2013 %>
+  		<% @awards_2013.push(@awards[i]) %>
+  	<% end %>
+  	<% if i @awards[i].year == 2012 %>
+  		<% @awards_2012.push(@awards[i]) %>
+  	<% end %>
+  	<% if i @awards[i].year == 2011 %>
+  		<% @awards_2011.push(@awards[i]) %>
+  	<% end %>
+  	<% if i @awards[i].year == 2010 %>
+  		<% @awards_2010.push(@awards[i]) %>
+  	<% end %>
+  	<% if i @awards[i].year == 2009 %>
+  		<% @awards_2009.push(@awards[i]) %>
+  	<% end %>
+  	<% if i @awards[i].year == 2008 %>
+  		<% @awards_2008.push(@awards[i]) %>
+  	<% end %>
+  	<% if i @awards[i].year == 2007 %>
+  		<% @awards_2007.push(@awards[i]) %>
+  	<% end %>
+  	<% if i @awards[i].year == 2006 %>
+  		<% @awards_2006.push(@awards[i]) %>
+  	<% end %>
+  <% end %>
+
+  <div class="awards-table-wrapper">
+
+    <% if @awards.size > 0 %>
+      <div class="table-responsive careers-table">
+        <h2>Awards</h2>
+        <br>
+        <table class="table table-condensed">
+          <thead>
+            <tr>
+              <th>PLACEMENT</th>
+              <th>ACTIVES</th>
+              <th>COMPETITION</th>
+            </tr>
+          </thead>
+          
+
+          <tr class="subheading">
+            <td><b>2015</b></td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <% for i in 0 ... @awards_2015.size %>
+            <tr>
+              <td><%= @awards_2015[i].placement %></td>
+              <td><%= @awards_2015[i].members %></td>
+              <td><%= @awards_2015[i].name %></td>
+            </tr>
+          <% end %>
+
+          <tr class="subheading">
+            <td><b>2014</b></td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <% for i in 0 ... @awards_2014.size %>
+            <tr>
+              <td><%= @awards_2014[i].placement %></td>
+              <td><%= @awards_2014[i].members %></td>
+              <td><%= @awards_2014[i].name %></td>
+            </tr>
+          <% end %>
+
+          <tr class="subheading">
+            <td><b>2013</b></td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <% for i in 0 ... @awards_2013.size %>
+            <tr>
+              <td><%= @awards_2013[i].placement %></td>
+              <td><%= @awards_2013[i].members %></td>
+              <td><%= @awards_2013[i].name %></td>
+            </tr>
+          <% end %>
+
+          <tr class="subheading">
+            <td><b>2012</b></td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <% for i in 0 ... @awards_2012.size %>
+            <tr>
+              <td><%= @awards_2012[i].placement %></td>
+              <td><%= @awards_2012[i].members %></td>
+              <td><%= @awards_2012[i].name %></td>
+            </tr>
+          <% end %>
+
+          <tr class="subheading">
+            <td><b>2011</b></td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <% for i in 0 ... @awards_2011.size %>
+            <tr>
+              <td><%= @awards_2011[i].placement %></td>
+              <td><%= @awards_2011[i].members %></td>
+              <td><%= @awards_2011[i].name %></td>
+            </tr>
+          <% end %>
+
+          <tr class="subheading">
+            <td><b>2010</b></td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <% for i in 0 ... @awards_2010.size %>
+            <tr>
+              <td><%= @awards_2010[i].placement %></td>
+              <td><%= @awards_2010[i].members %></td>
+              <td><%= @awards_2010[i].name %></td>
+            </tr>
+          <% end %>
+
+          <tr class="subheading">
+            <td><b>2009</b></td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <% for i in 0 ... @awards_2009.size %>
+            <tr>
+              <td><%= @awards_2009[i].placement %></td>
+              <td><%= @awards_2009[i].members %></td>
+              <td><%= @awards_2009[i].name %></td>
+            </tr>
+          <% end %>
+
+          <tr class="subheading">
+            <td><b>2008</b></td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <% for i in 0 ... @awards_2008.size %>
+            <tr>
+              <td><%= @awards_2008[i].placement %></td>
+              <td><%= @awards_2008[i].members %></td>
+              <td><%= @awards_2008[i].name %></td>
+            </tr>
+          <% end %>
+
+          <tr class="subheading">
+            <td><b>2007</b></td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <% for i in 0 ... @awards_2007.size %>
+            <tr>
+              <td><%= @awards_2007[i].placement %></td>
+              <td><%= @awards_2007[i].members %></td>
+              <td><%= @awards_2007[i].name %></td>
+            </tr>
+          <% end %>
+
+          <tr class="subheading">
+            <td><b>2006</b></td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <% for i in 0 ... @awards_2006.size %>
+            <tr>
+              <td><%= @awards_2006[i].placement %></td>
+              <td><%= @awards_2006[i].members %></td>
+              <td><%= @awards_2006[i].name %></td>
+            </tr>
+          <% end %>
+        </table>
+      </div>
+    <% end %>
+   </div>
+</div>

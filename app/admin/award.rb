@@ -17,16 +17,18 @@ ActiveAdmin.register Award do
   # end
   index do
     id_column
-    column :name
+    column :placement
     column :members
+    column :name
     column :year
     actions
   end
 
   form do |f|
     f.inputs "Award information" do
-      f.input :name
+      f.input :placement, as: :select, collection: ["1st Place", "2nd Place", "3rd Place", "Finalist"]
       f.input :members
+      f.input :name
       f.input :year
     end
     f.actions

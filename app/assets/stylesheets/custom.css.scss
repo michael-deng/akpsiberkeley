@@ -203,7 +203,7 @@ nav .container-fluid {
 }
 
 .actives-thumbnails li {
-  display: inline-block;
+  display: inline-block;git 
   margin: 10px;
 }
 
@@ -271,8 +271,6 @@ nav .container-fluid {
   //border-bottom: 2px solid lightgrey;
 }
 
-
-
 /*** Rush FAQ Page Customizations ***/
 
 .faq-wrapper {
@@ -296,4 +294,15 @@ nav .container-fluid {
 // Customize the content of the questions on the rush page
 .faq-wrapper a {
   color: black;
+}
+
+
+
+/*** Awards Page Customizations ***/
+
+.awards-table-wrapper {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  font-family: "cyntho_proregular", sans-serif;
 }
