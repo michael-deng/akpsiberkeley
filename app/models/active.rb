@@ -8,9 +8,7 @@ class Active < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   has_attached_file :photo, 
-    :styles => { :medium => "300x300>", :small => "250x250>", :thumb => "100x100>" },
-    :storage => :dropbox,
-    :dropbox_credentials => Rails.root.join("config/dropbox.yml")
+    :styles => { :medium => "300x300>", :small => "250x250>", :thumb => "100x100>" }
 
   validates_attachment :photo, 
     :content_type => { :content_type => ["image/jpg", "image/jpeg", "image/png", "image/gif"] }, 

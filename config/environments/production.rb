@@ -82,9 +82,9 @@ Akpsiberkeley::Application.configure do
   config.paperclip_defaults = {
   :storage => :s3,
   :s3_credentials => {
-    :bucket => ENV['S3_BUCKET_NAME'],
-    :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
-    :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
+    :bucket => ENV['akpsi-paperclip-storage-2015'],
+    :access_key_id => ENV['AKIAIVYYDQKF545MVDNQ'],
+    :secret_access_key => ENV['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']
     }
   }
 
