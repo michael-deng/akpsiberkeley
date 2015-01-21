@@ -15,7 +15,7 @@ gem 'activeadmin', github: 'activeadmin'
 gem 'simple_form'
 gem 'autoprefixer-rails'
 gem "paperclip", "~> 4.2"
-gem "paperclip-dropbox", ">= 1.1.7"
+gem 'aws-sdk', '~> 1.5.7'
 
 group :development, :test do
   gem 'sqlite3', '1.3.8'
