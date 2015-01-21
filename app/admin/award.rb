@@ -1,7 +1,7 @@
 # Award settings in activeadmin
 
 ActiveAdmin.register Award do
-  permit_params :name, :members, :year
+  permit_params :name, :members, :year, :placement
 
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
