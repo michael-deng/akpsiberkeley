@@ -78,7 +78,8 @@ Akpsiberkeley::Application.configure do
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
 
-  # Use Amazon S3 for Paperclip storage
+  # Use Amazon S3 for Paperclip storage and figaro for setting the credentials
+  # Actual values of the credentials are in the application.yml file
   config.paperclip_defaults = {
     :storage => :s3,
     :default_url => '/images/:attachment/missing_:style.png',
