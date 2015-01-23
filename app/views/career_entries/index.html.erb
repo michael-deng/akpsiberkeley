@@ -15,12 +15,12 @@
 
   <nav class="nav navbar-default navbar-careers">
     <ul class="nav navbar-nav">
-      <li><%= link_to "2015", career_entries_path(:year => "2015") %></li>
-      <li><%= link_to "2014", career_entries_path(:year => "2014") %></li>
-      <li><%= link_to "2013", career_entries_path(:year => "2013") %></li>
-      <li><%= link_to "2012", career_entries_path(:year => "2012") %></li>
-      <li><%= link_to "2011", career_entries_path(:year => "2011") %></li>
-      <li><%= link_to "2010", career_entries_path(:year => "2010") %></li>
+      <li><%= link_to "2015", career_entries_path(:year => "2015") %><div id="2015"></div></li>
+      <li><%= link_to "2014", career_entries_path(:year => "2014") %><div id="2014"></div></li>
+      <li><%= link_to "2013", career_entries_path(:year => "2013") %><div id="2013"></div></li>
+      <li><%= link_to "2012", career_entries_path(:year => "2012") %><div id="2012"></div></li>
+      <li><%= link_to "2011", career_entries_path(:year => "2011") %><div id="2011"></div></li>
+      <li><%= link_to "2010", career_entries_path(:year => "2010") %><div id="2010"></div></li>
     </ul>
   </nav>
 
@@ -299,3 +299,6 @@
   </div>
   <br>
 </div>
+
+<!-- This script enables the app to place the blue dot under the right year in the careers navbar -->
+<script type="text/javascript">document.getElementById(<%= @year.to_s %>).style.background = 'blue'</script>

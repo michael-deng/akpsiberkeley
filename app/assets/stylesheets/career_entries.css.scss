@@ -4,24 +4,26 @@
 
 /*** CAREERS PAGE CUSTOMIZATIONS ***/
 
-.navbar-careers {
+.center-content .navbar-careers {
   margin-top: -50px;
   background: none;
   width: 100%;
+  background: none;
 }
 
-.navbar-careers ul {
+.navbar-careers .nav {
   width: 100%;
   text-align: center;
+  background: none;
 }
 
-.navbar-careers ul li {
+.navbar-careers .nav li {
   display: inline-block;
   float: none;
 }
 
 .center-content .navbar-careers .navbar-nav a {
-  font-size: 1.5em;
+  font-size: 1.2em;
   text-decoration: none;
   color: black;
 }
@@ -56,4 +58,15 @@
 
 .careers-table .table .subheading td {
   font-size: 1em;
+}
+
+// Circle indicators under year navbar
+.navbar-careers .nav div {
+    -moz-border-radius: 50px/50px;
+    -webkit-border-radius: 50px 50px;
+    border-radius: 50px/50px;
+    border:solid 0.1em black;
+    width:0.5em;
+    height:0.5em;
+    margin: auto;
 }
