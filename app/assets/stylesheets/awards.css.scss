@@ -12,9 +12,15 @@
 
 .awards-table .table thead tr th {
   background: none;
-  font-size: 1em;
+  font-size: 1.1em;
   border-bottom-width: 2px;
   width: 40%;
+}
+
+// Customize the awards table year subheadings eg. 2014
+.awards-table .table .subheading td {
+  font-size: 1.1em;
+  padding-top: 1.25em;
 }
 
 #placement-column {
