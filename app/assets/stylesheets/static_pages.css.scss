@@ -1,3 +1,66 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*** HOME PAGE CUSTOMIZATIONS ***/
+
+/* Customize container holding the content of the homepage */
+
+.home {
+	height: 100%;
+	background: image_url("banquet_fa14.png") no-repeat center center;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+// /* Make homepage heading mobile responsive */
+// @media (max-width: 768px) {
+// 	.home-banner div h1 {
+// 		font-size: 190%;
+// 	}
+// 	.home-banner div h3 {
+// 		font-size: 100%;
+// 	}
+// }
+
+
+
+/*** Rush FAQ Page Customizations ***/
+
+.faq-wrapper {
+  width: 80%;
+  margin: auto;
+  font-family: "cyntho_proregular", sans-serif;
+}
+
+// Customize the list of questions on the rush page
+.faq-wrapper .faq-ul {
+  text-align: center;
+  list-style-type: none;
+}
+
+// Customize the list of questions on the rush page
+.faq-wrapper .faq-ul a {
+  color: black;
+  text-decoration: none;
+}
+
+// Customize the content of the questions on the rush page
+.faq-wrapper a {
+  color: black;
+}
+
+
+
+/*** Rush Page Customizations ***/
+
+#rush-banner {
+  background: image_url("rush_banner.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
