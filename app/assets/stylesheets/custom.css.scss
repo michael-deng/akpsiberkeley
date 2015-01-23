@@ -72,6 +72,10 @@
 
 /*** GENERAL CUSTOMIZATIONS ***/
 
+body {
+  font-family: 'cyntho_proregular', sans-serif;
+}
+
 .center-content {
   background: white;
 }
@@ -90,7 +94,6 @@
   width: 100%;
   position: absolute;
   text-align: center;
-  font-family: 'cyntho_proregular', sans-serif;
   font-weight: 300;
   font-size: 8em;
   color: white;
@@ -127,7 +130,6 @@
   height: 80px;
   margin-bottom: -80px;
   z-index: 100;
-  font-family: "cyntho_proregular", sans-serif;
 }
 
 // Squeeze the inner elements of the navbar
@@ -164,7 +166,6 @@ nav .container-fluid {
 .navbar-bottom {
 	border: none;
   margin: 0;
-  font-family: "cyntho_proregular", sans-serif;
 }
 
 .navbar-bottom ul {
