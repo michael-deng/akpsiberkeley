@@ -59,7 +59,7 @@
 }
 
 .banner-text {
-  top: 35%;
+  top: 30%;
   width: 100%;
   position: absolute;
   text-align: center;
@@ -67,7 +67,7 @@
   font-weight: 300;
   font-size: 120px;
   color: white;
-  line-height: 80px;
+  line-height: 150px;
 }
 
 .banner-text .caption {
@@ -75,7 +75,8 @@
 }
 
 .banner-text hr {
-  margin-top: 55px;
+  margin-top: 20px;
+  margin-bottom: -20px;
   border: none;
   width: 10%;
   height: 2px;
@@ -232,13 +233,13 @@ nav .container-fluid {
   float: none;
 }
 
-.banner-text .navbar-careers .navbar-nav a {
-  color: white;
-  font-size: 20%;
+.center-content .navbar-careers .navbar-nav a {
+  font-size: 150%;
   text-decoration: none;
+  color: black;
 }
 
-.banner-text .navbar-careers .navbar-nav a:hover {
+.center-content .navbar-careers .navbar-nav a:hover {
   color: #006cb6;
 }
 
@@ -305,4 +306,16 @@ nav .container-fluid {
   margin: auto;
   text-align: center;
   font-family: "cyntho_proregular", sans-serif;
+}
+
+
+
+/*** Rush Page Customizations ***/
+
+#rush-banner {
+  background: image_url("rush_banner.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
