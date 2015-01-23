@@ -28,7 +28,7 @@
 
 
 
-/*** Rush FAQ Page Customizations ***/
+/*** FAQ Page Customizations ***/
 
 .faq-wrapper {
   width: 80%;
@@ -40,6 +40,8 @@
 .faq-wrapper .faq-ul {
   text-align: center;
   list-style-type: none;
+  line-height: 2em;
+  font-size: 1.2em;
 }
 
 // Customize the list of questions on the rush page
@@ -51,6 +53,11 @@
 // Customize the content of the questions on the rush page
 .faq-wrapper a {
   color: black;
+}
+
+// Customize the subheadings of each question
+.faq-wrapper a p {
+  font-size: 1.2em;
 }
 
 
