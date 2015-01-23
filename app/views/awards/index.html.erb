@@ -20,7 +20,6 @@
   <% @awards_2011 = [] %>
   <% @awards_2010 = [] %>
   <% @awards_2009 = [] %>
-  <% @awards_2008 = [] %>
   <% @awards_2007 = [] %>
   <% @awards_2006 = [] %>
   <% @awards_2005 = [] %>
@@ -45,9 +44,6 @@
   	<% end %>
   	<% if @awards[i].year == 2009 %>
   		<% @awards_2009.push(@awards[i]) %>
-  	<% end %>
-  	<% if @awards[i].year == 2008 %>
-  		<% @awards_2008.push(@awards[i]) %>
   	<% end %>
   	<% if @awards[i].year == 2007 %>
   		<% @awards_2007.push(@awards[i]) %>
@@ -74,21 +70,6 @@
               <th>COMPETITION</th>
             </tr>
           </thead>
-          
-
-          <tr class="subheading">
-            <td><b>2015</b></td>
-            <td></td>
-            <td></td>
-          </tr>
-
-          <% for i in 0 ... @awards_2015.size %>
-            <tr>
-              <td><%= @awards_2015[i].placement %></td>
-              <td><%= @awards_2015[i].members %></td>
-              <td><%= @awards_2015[i].name %></td>
-            </tr>
-          <% end %>
 
           <tr class="subheading">
             <td><b>2014</b></td>
@@ -171,20 +152,6 @@
               <td><%= @awards_2009[i].placement %></td>
               <td><%= @awards_2009[i].members %></td>
               <td><%= @awards_2009[i].name %></td>
-            </tr>
-          <% end %>
-
-          <tr class="subheading">
-            <td><b>2008</b></td>
-            <td></td>
-            <td></td>
-          </tr>
-
-          <% for i in 0 ... @awards_2008.size %>
-            <tr>
-              <td><%= @awards_2008[i].placement %></td>
-              <td><%= @awards_2008[i].members %></td>
-              <td><%= @awards_2008[i].name %></td>
             </tr>
           <% end %>
 
