@@ -47,9 +47,13 @@
   font-family: "cyntho_proregular", sans-serif;
 }
 
+.careers-table p {
+  font-size: 2em;
+}
+
 .careers-table .table thead tr th {
   background: none;
-  font-size: 1.1em;
+  font-size: 1.2em;
   border-bottom-width: 2px;
   width: 25%;
   //border-color: #00acee;
@@ -57,7 +61,7 @@
 
 // Customize the careers table subheadings eg. Investment Banking
 .careers-table .table .subheading td {
-  font-size: 1.1em;
+  font-size: 1.2em;
   padding-top: 1.25em;
 }
 
