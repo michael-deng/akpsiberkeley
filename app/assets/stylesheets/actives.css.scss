@@ -30,20 +30,19 @@
 /*** ACTIVE BROTHERS SHOW PAGE CUSTOMIZATIONS ***/
 
 #individual-actives-banner {
-	background: image_url("twin_peaks_banner.jpg") no-repeat center center;
+	background: image_url("sunset_banner.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
-.actives-info {
-  position: relative;
-  display: inline-block;
+.actives-profile-wrapper {
+  width: 75%;
+  margin: auto;
 }
 
-.active-photo {
-  position: absolute;
-  left: 50%;
-  top: 20px;
+.actives-profile-heading {
+  text-align: center;
+  font-size: 2.5em;
 }

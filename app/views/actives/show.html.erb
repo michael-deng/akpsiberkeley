@@ -1,23 +1,31 @@
 <div class="center-content">
   <div class="banner" id="individual-actives-banner">
     <div class="dark-layer">
-    	<div class="row">
-        <div class="col-md-6">
-          <%= image_tag(a.photo.url(:medium)) %>
-        </div>
+    	<div class="banner-text">
+        PROFILES
+        <hr>
+        <p class="caption">Learn about the background and aspirations of each individual brother</p>
+      </div>
     </div>
   </div>
 
   <br>
 
-  <div class="individual-actives-wrapper">
+  <div class="actives-profile-wrapper">
+    <div class="actives-profile-heading">
+      <%= @active.name %>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <%= image_tag(a.photo.url(:small)) %>
+      </div>
+      <div class="col-md-6">
+
+      </div>
+    </div>
+  </div>
+</div>
 
 
-Name: <%= @active.name %><br />
-Email: <%= @active.email %><br />
-Major: <%= @active.major %><br />
-Hometown: <%= @active.hometown %><br />
-Pledge Class: <%= @active.pledge_class %><br />
-Previous Positions: <%= @active.previous_positions %><br />
-LinkedIn: <%= @active.linkedin %><br />
-Biography: <%= @active.biography %><br />
+
+
