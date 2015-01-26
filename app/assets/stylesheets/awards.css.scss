@@ -4,6 +4,14 @@
 
 /*** Awards Page Customizations ***/
 
+#awards-banner {
+  background: image_url("awards_banner.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .awards-table-wrapper {
   width: 80%;
   margin: auto;
