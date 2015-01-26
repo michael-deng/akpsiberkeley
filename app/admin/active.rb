@@ -1,7 +1,8 @@
 # Active settings in activeadmin
 
 ActiveAdmin.register Active do
-  permit_params :name, :email, :major, :pledge_class, :hometown, :linkedin, :previous_positions, :eboard_position, :display, :biography, :photo, :password
+  permit_params :name, :email, :major, :pledge_class, :hometown, :linkedin, :previous_positions, 
+                :eboard_position, :display, :biography, :photo, :password
 
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters

@@ -1,5 +1,8 @@
 ActiveAdmin.register RushApplication do
 
+  permit_params :first_name, :last_name, :email, :phone_number, :hometown, :year, :major, :major_gpa,
+                :cumulative_gpa, :sat_score, :haas, :classes_now, :extracurriculars, :cut
+
 
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
