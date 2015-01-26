@@ -9,23 +9,26 @@
     </div>
   </div>
 
-  <br>
+  <br><br>
 
   <div class="actives-profile-wrapper">
     <div class="actives-profile-heading">
       <%= @active.name %>
     </div>
+    <br>
     <div class="row">
-      <div class="col-md-6">
-        <%= image_tag(a.photo.url(:small)) %>
+      <div class="col-md-3">
+        <%= image_tag(@active.photo.url(:medium)) %>
       </div>
-      <div class="col-md-6">
-
+      <div class="col-md-9">
+        <ul class="actives-profile-info">
+          <li><strong>MAJOR:</strong> <%= @active.major %></li>
+          <li><strong>HOMETOWN:</strong> <%= @active.hometown %></li>
+          <li><strong>PlEDGE CLASS:</strong> <%= @active.pledge_class %></li>
+          <li><strong>POSITIONS HELD:</strong> <%= @active.previous_positions %></li>
+          <li><strong>BIOGRAPHY:</strong> <%= @active.biography %></li>
+        </ul>
       </div>
     </div>
   </div>
 </div>
-
-
-
-

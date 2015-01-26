@@ -38,11 +38,23 @@
 }
 
 .actives-profile-wrapper {
-  width: 75%;
+  width: 60%;
   margin: auto;
 }
 
 .actives-profile-heading {
   text-align: center;
   font-size: 2.5em;
+}
+
+.actives-profile-info {
+  list-style-type: none;
+}
+
+.actives-profile-info li {
+  margin-bottom: 1em;
+}
+
+.actives-profile-info li strong {
+  font-size: 1.1em;
 }
