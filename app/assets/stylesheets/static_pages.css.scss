@@ -7,7 +7,7 @@
 /* Customize container holding the content of the homepage */
 
 .home {
-	height: 100%;
+	height: calc(100% - 80px);
   width: 100%;
 	background: image_url("banquet_fa14.png") no-repeat center center;
 	-webkit-background-size: cover;

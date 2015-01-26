@@ -37,6 +37,13 @@
   background-size: cover;
 }
 
-.individual-actives-wrapper {
+.actives-info {
+  position: relative;
+  display: inline-block;
+}
 
+.active-photo {
+  position: absolute;
+  left: 50%;
+  top: 20px;
 }
