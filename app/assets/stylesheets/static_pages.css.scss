@@ -114,7 +114,7 @@
 
 
 
-/*** Aout Page Customizations ***/
+/*** About Page Customizations ***/
 
 #about-banner {
   background: image_url("san_francisco_banner.jpg") no-repeat center center;
@@ -156,4 +156,31 @@
   -moz-border-radius: 50px/50px;
   -webkit-border-radius: 50px 50px;
   border-radius: 50px/50px;
+}
+
+.about-wrapper {
+  text-align: center;
+  text-decoration: none;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.about-wrapper p {
+  width: 80%;
+  margin: auto;
+  text-decoration: none;
+}
+
+div .about-subheading {
+  font-size: 2em;
+}
+
+div .about-caption {
+  text-align: left;
+  font-size: 1.2em;
+  margin-top: 1em;
+}
+
+.remove-hover-effect:hover {
+  text-decoration: none;
 }
