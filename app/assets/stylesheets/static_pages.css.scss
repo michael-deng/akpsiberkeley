@@ -8,23 +8,30 @@
 
 .home {
 	height: 100%;
+  width: 100%;
 	background: image_url("banquet_fa14.png") no-repeat center center;
 	-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  position: relative;
 }
 
+.home-page {
+  text-align: center;
+  color: white;
+  width: 100%;
+  position: absolute;
+  top: 35%;
+}
 
-// /* Make homepage heading mobile responsive */
-// @media (max-width: 768px) {
-// 	.home-banner div h1 {
-// 		font-size: 190%;
-// 	}
-// 	.home-banner div h3 {
-// 		font-size: 100%;
-// 	}
-// }
+.home-heading {
+  font-size: 5em;
+}
+
+.home-caption {
+  font-size: 1.8em;
+}
 
 
 
