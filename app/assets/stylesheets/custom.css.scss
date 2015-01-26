@@ -191,18 +191,24 @@ nav .container-fluid {
 
 
 
-/*** BACKGROUND CUSTOMIZATIONS ***/
+/*** USEFUL CLASSES CUSTOMIZATIONS ***/
 
+// Set background black and text color white
 .black-bg {
   background: black;
   color: white;
 }
 
+// Set background white and text color black
 .white-bg {
   background: white;
   color: black;
 }
 
+// Remove any effects on hover
+.remove-hover-effect:hover {
+  text-decoration: none;
+}
 
 
 
