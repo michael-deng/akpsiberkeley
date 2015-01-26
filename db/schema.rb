@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150120221029) do
+ActiveRecord::Schema.define(version: 20150126175851) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -97,6 +97,24 @@ ActiveRecord::Schema.define(version: 20150120221029) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "fulltime_or_intern"
+  end
+
+  create_table "rush_applications", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "email"
+    t.string   "phone_number"
+    t.string   "year"
+    t.string   "major"
+    t.string   "major_gpa"
+    t.string   "cumulative_gpa"
+    t.integer  "sat_score"
+    t.boolean  "haas"
+    t.text     "classes_now"
+    t.text     "extracurriculars"
+    t.string   "hometown"
   end
 
   create_table "rushees", force: true do |t|
