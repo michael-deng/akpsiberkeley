@@ -15,7 +15,7 @@
 
   <div class="rushees-wrapper">
 		<ul class="rushees-thumbnails">
-			<% @rush_application.each do |r| %>
+			<% @rushapplications.each do |r| %>
 				<% if (!r.cut && r.photo?) %>
 					<li>
 						<%= link_to image_tag(r.photo.url(:small)), rushee_path(r) %>
