@@ -13,11 +13,12 @@
     <div class="actives-profile-heading">
       <%= @active.name %>
     </div>
+    <hr>
     <div class="row">
-      <div class="col-md-2">
+      <div class="col-md-3">
         <%= image_tag(@active.photo.url(:medium)) %>
       </div>
-      <div class="col-md-10">
+      <div class="col-md-9">
         <ul class="actives-profile-info">
           <li><strong>MAJOR:</strong> <%= @active.major %></li>
           <li><strong>HOMETOWN:</strong> <%= @active.hometown %></li>
