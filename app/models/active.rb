@@ -8,7 +8,7 @@ class Active < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   has_attached_file :photo, 
-    :styles => { :large => "450x450>", :medium => "300x300>", :small => "250x250>", :thumb => "100x100>" }
+    :styles => { :medium => "300x300>", :small => "250x250>", :thumb => "100x100>" }
 
   validates_attachment :photo, 
     :content_type => { :content_type => ["image/jpg", "image/jpeg", "image/png", "image/gif"] }, 
@@ -22,8 +22,8 @@ class Active < ActiveRecord::Base
     presence: true, 
     length: { maximum: 50 }
   
-  validates :email, 
-    presence: true, 
+  validates :email,
+    presence: true,
     length: { maximum: 255 }, 
     format: { with: VALID_EMAIL_REGEX }, 
     uniqueness: { case_sensitive: false }

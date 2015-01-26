@@ -1,4 +1,7 @@
 class RusheesController < ApplicationController
+
+	before_action :authenticate_active!, only: [:show, :index]
+
 	def show
 		@rushee = Rushee.find(params[:id])
 	end
