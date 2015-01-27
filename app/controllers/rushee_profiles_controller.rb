@@ -4,8 +4,8 @@ class RusheeProfilesController < ApplicationController
 
 	def index
 		# Sort all actives according to their last names
-		@rushee_profiles = RusheeProfile.all.sort_by{ |r| r.name.split(' ')[r.name.split(' ').length - 1].downcase }
-	end
+		@rushee_profiles_by_name = RusheeProfile.all.sort_by{ |r| r.name.split(' ')[r.name.split(' ').length - 1].downcase }
+		@rushee_profiles = @rushee_profiles_by_name.sort_by{ |r| (r.rushee_comments.count * -1) }
 
 	def show
 		@rushee_profile = RusheeProfile.find(params[:id])
