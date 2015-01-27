@@ -66,3 +66,23 @@
 .actives-profile-info li strong {
   font-size: 1.1em;
 }
+
+
+
+/*** ACTIVE BROTHERS LOG IN PAGE CUSTOMIZATIONS ***/
+
+#login-banner {
+  background: image_url("silly_banner.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.login-wrapper {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}

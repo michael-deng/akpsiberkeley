@@ -12,11 +12,11 @@ gem 'will_paginate', '3.0.4'
 gem 'bootstrap-will_paginate', '0.0.9'
 gem 'devise'
 gem 'activeadmin', github: 'activeadmin'
-gem 'simple_form'
 gem 'autoprefixer-rails'
 gem "paperclip", "~> 4.2"
 gem 'aws-sdk', '~> 1.5.7'
-gem "figaro"
+gem 'figaro'
+gem 'bootstrap_form'
 
 group :development, :test do
   gem 'sqlite3', '1.3.8'
