@@ -6,13 +6,6 @@ class StaticPagesController < ApplicationController
   def about
   end
 
-  def careers
-    @careerentries = CareerEntry.all
-  end
-
-  def awards
-  end
-
   def abc
   end
 
