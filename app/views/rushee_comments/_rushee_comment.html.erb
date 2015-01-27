@@ -4,4 +4,11 @@ Posted <%= time_ago_in_words(rushee_comment.created_at) %> ago
 <br>
 <br>
 <%= rushee_comment.content %>
+<br>
+<br>
+<% if (current_active.eql? rushee_comment.active) %>
+	<%= link_to "Delete", [@rushee_profile, rushee_comment], method: :delete,
+	confirm: "You sure?",
+	title: rushee_comment.content %>
+<% end %>
 <hr>
