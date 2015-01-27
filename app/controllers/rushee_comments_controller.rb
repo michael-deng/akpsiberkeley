@@ -14,6 +14,9 @@ class RusheeCommentsController < ApplicationController
 		end
 	end
 
+	def destroy
+	end
+
 	private
 
     def rushee_comment_params

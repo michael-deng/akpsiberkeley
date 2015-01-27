@@ -27,5 +27,4 @@ ActiveAdmin.register RusheeProfile do
     end
     f.actions
   end
-
 end
