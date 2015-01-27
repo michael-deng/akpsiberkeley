@@ -1,5 +1,7 @@
 class RushApplicationsController < ApplicationController
 
+	belongs_to :rushee_profile, touch: true
+
 	def new
 		@rush_application = RushApplication.new
 	end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150127085551) do
+ActiveRecord::Schema.define(version: 20150127185008) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -116,6 +116,18 @@ ActiveRecord::Schema.define(version: 20150127085551) do
     t.text     "extracurriculars"
     t.string   "hometown"
   end
+
+  create_table "rushee_comments", force: true do |t|
+    t.text     "content"
+    t.integer  "active_id"
+    t.integer  "rushee_profile_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "rushee_comments", ["active_id", "created_at"], name: "index_rushee_comments_on_active_id_and_created_at"
+  add_index "rushee_comments", ["active_id"], name: "index_rushee_comments_on_active_id"
+  add_index "rushee_comments", ["rushee_profile_id"], name: "index_rushee_comments_on_rushee_profile_id"
 
   create_table "rushee_profiles", force: true do |t|
     t.string   "name"

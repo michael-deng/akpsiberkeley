@@ -16,6 +16,7 @@ class Active < ActiveRecord::Base
 
   # Each active can have many career entries
   has_many :career_entries, dependent: :destroy
+  has_many :rushee_comments, dependent: :destroy
 
   # These fields have to exist when an active is created
   validates :name, 

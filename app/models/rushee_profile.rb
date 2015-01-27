@@ -1,5 +1,8 @@
 class RusheeProfile < ActiveRecord::Base
 
+	has_many :rushee_comments, dependent: :destroy
+	has_one :rush_application, dependent: :destroy
+
 	has_attached_file :photo, 
     :styles => { :medium => "300x300>", :small => "200x200>", :thumb => "100x100>" }
 

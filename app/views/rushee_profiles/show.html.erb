@@ -1,1 +1,44 @@
 <% provide(:title, "Rushee Profile") %>
+
+<div class="center-content">
+  <div class="banner" id="actives-banner">
+    <div class="dark-layer">
+    	<div class="banner-text">
+        Rushees
+        <hr>
+        <p class="caption">The Hunger Games</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="actives-profile-wrapper">
+    <div class="actives-profile-heading">
+      <%= @rushee_profile.name %>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-3">
+        <%= image_tag(@rushee_profile.photo.url(:medium)) %>
+      </div>
+      <div class="col-md-9">
+        <div style="text-align:center;">
+	        <% if @rushee_comments.count > 0 %>
+	          <h4>COMMENTS (<%= @rushee_comments.count %>)</h4>
+	          <hr />
+	        <% else %>
+	          <h4>No comments yet.</h4>
+	        <% end %>
+	        <%= render @rushee_comments %>
+	      </div>
+
+        <div>
+  	      <%= form_for([@rushee_profile, @rushee_comment]) do |f| %>
+  				   <%= f.text_area :content, placeholder: "Compose new comment..." %>
+  				  <br />
+  				  <%= f.submit "POST", class: "btn btn-sm" %>
+  				<% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
