@@ -22,7 +22,12 @@
     		<li><%= link_to "Non-profit Consulting", abc_path %></li>
     	    <li><%= link_to "Start-up Incubator", abv_path %></li> -->
     		<li><%= link_to "Rush", rush_path %></li>
-        <li><%= link_to "Active Brother Login", active_session_path %></li>
+            <% if active_signed_in? %>
+                <li><%= link_to "Rushees", rushee_profiles_path %></li>
+                <li><%= link_to "Sign Out", destroy_active_session_path, :method => :delete %></li>
+            <% else %>
+                <li><%= link_to "Active Brother Login", active_session_path %></li>
+            <% end %>
     	</ul>
     </div>
   </div>

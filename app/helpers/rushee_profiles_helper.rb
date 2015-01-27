@@ -1,0 +1,2 @@
+module RusheeProfilesHelper
+end
