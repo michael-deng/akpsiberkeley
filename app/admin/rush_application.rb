@@ -29,7 +29,6 @@ ActiveAdmin.register RushApplication do
     column :major_gpa
     column :cumulative_gpa
     column :sat_score
-    column :haas
     column :classes_now
     column :extracurriculars
     column :cut
@@ -48,7 +47,6 @@ ActiveAdmin.register RushApplication do
       f.input :major_gpa
       f.input :cumulative_gpa
       f.input :sat_score
-      f.input :haas
       f.input :classes_now
       f.input :extracurriculars
       f.input :cut

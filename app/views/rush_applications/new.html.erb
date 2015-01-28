@@ -55,7 +55,7 @@
       <div class="form-group">
         <%= f.label :year, class: 'col-sm-4 control-label'  %>
         <div class="col-sm-5">
-            <%= f.text_field :year, :style => "width:100%;", class: 'form-control'  %>
+            <%= f.select :year, [['Freshman', 1], ['Sophomore', 2], ['Junior', 3], ['Junior Transfer', 4], ['Senior', 5]] %>
         </div>
       </div>
 
@@ -88,14 +88,7 @@
       </div>
 
       <div class="form-group">
-        <%= f.label :haas, class: 'col-sm-4 control-label'  %>
-        <div class="col-sm-5">
-            <%= f.check_box :haas %>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <%= f.label :classes_now, class: 'col-sm-4 control-label'  %>
+        <%= f.label :classes_now, 'Classes this semester', class: 'col-sm-4 control-label'  %>
         <div class="col-sm-5">
             <%= f.text_area :classes_now, class: 'form-control'  %>
         </div>
