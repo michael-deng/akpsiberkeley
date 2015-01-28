@@ -1,4 +1,4 @@
-<% provide(:title, "Active Brothers") %>
+<% provide(:title, "Executive Board") %>
 
 <div class="center-content">
   <div class="banner" id="actives-banner">
@@ -15,11 +15,12 @@
   
   <div class="actives-wrapper">
   	<ul class="actives-thumbnails">
-			<% @actives.each do |a| %>
+			<% @eboard_actives.each do |a| %>
 				<% if (a.display && a.photo?) %>
 					<li>
 						<%= link_to image_tag(a.photo.url(:small)), active_path(a) %>
 						<p><%= a.name %></p>
+            <p><%= a.eboard_position %></p>
 					</li>
 				<% end %>
 			<% end %>
