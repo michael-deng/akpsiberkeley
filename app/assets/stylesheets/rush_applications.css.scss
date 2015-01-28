@@ -40,3 +40,8 @@
 .cover-letter-info ol li {
 	font-size: 0.8em;
 }
+
+.required:before {
+	content: "*";
+	color: red;
+}

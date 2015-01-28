@@ -1,4 +1,6 @@
 class RushApplicationsController < ApplicationController
+
+	before_action :authenticate_active!, only: [:index, :show]
 	
 	def new
 		@rush_application = RushApplication.new
@@ -7,7 +9,6 @@ class RushApplicationsController < ApplicationController
 	def create
 		@rush_application = RushApplication.new(rush_application_params)
     if @rush_application.save
-      flash[:success] = "Application Submitted"
       redirect_to root_path
     else
       render 'new'
