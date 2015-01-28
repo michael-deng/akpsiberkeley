@@ -1,5 +1,7 @@
 class RushApplication < ActiveRecord::Base
 
+	VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+
 	has_attached_file :resume
 	has_attached_file :cover_letter
 	has_attached_file :transcript
