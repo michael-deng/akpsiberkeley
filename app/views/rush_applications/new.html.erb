@@ -14,131 +14,132 @@
   <div class="rush-application-wrapper">
     <div class="rush-application-info">
       <p>Spring 2015 Rush Application</p>
+      Fill out this application to apply for Alpha Kappa Psi. All majors are welcome. We require a GPA minimum of 3.3. All attachments should be in PDF format. Your resume and cover letter should be no more than one page in length. For your cover letter, make sure to address what you hope to gain from Alpha Kappa Psi, what you can contribute to Alpha Kappa Psi, and how you stand out from other candidates.
     </div>
-      <%= form_for(@rush_application, html: { class: 'form-horizontal' }) do |f| %>
+    <%= form_for(@rush_application, html: { class: 'form-horizontal' }) do |f| %>
 
-      <div style="text-align:center;">
-        <%= render 'shared/rush_application_error_messages' %>
-      </div>
+    <div style="text-align:center;">
+      <%= render 'shared/rush_application_error_messages' %>
+    </div>
 
-      <br>
-      
-      <div class="form-group">
-        <%= f.label :first_name, 'First Name', class: 'col-sm-4 control-label required'  %>
-        <div class="col-sm-5">
-            <%= f.text_field :first_name, :style => "width:100%;", :placeholder => "First Name", autofocus: true, class: 'form-control'  %>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <%= f.label :last_name, 'Last Name', class: 'col-sm-4 control-label required'  %>
-        <div class="col-sm-5">
-            <%= f.text_field :last_name, :style => "width:100%;", :placeholder => "Last Name", class: 'form-control'  %>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <%= f.label :email, class: 'col-sm-4 control-label required'  %>
-        <div class="col-sm-5">
-            <%= f.text_field :email, :style => "width:100%;", :placeholder => "Email", class: 'form-control'  %>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <%= f.label :phone_number, 'Phone Number', class: 'col-sm-4 control-label required'  %>
-        <div class="col-sm-5">
-            <%= f.text_field :phone_number, :style => "width:100%;", :placeholder => "Phone Number", class: 'form-control'  %>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <%= f.label :hometown, class: 'col-sm-4 control-label required'  %>
-        <div class="col-sm-5">
-            <%= f.text_field :hometown, :style => "width:100%;", :placeholder => "Hometown", class: 'form-control'  %>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <%= f.label :year, class: 'col-sm-4 control-label required'  %>
-        <div class="col-sm-5">
-            <%= f.select :year, [['Freshman', 1], ['Sophomore', 2], ['Junior', 3], ['Junior Transfer', 4], ['Senior', 5]] %>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <%= f.label :major, class: 'col-sm-4 control-label required'  %>
-        <div class="col-sm-5">
-            <%= f.text_field :major, :style => "width:100%;", :placeholder => "Major", class: 'form-control'  %>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <%= f.label :major_gpa, 'Major GPA', class: 'col-sm-4 control-label required'  %>
-        <div class="col-sm-5">
-            <%= f.text_field :major_gpa, :style => "width:100%;", :placeholder => "Major GPA", class: 'form-control'  %>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <%= f.label :cumulative_gpa, 'Cumulative GPA', class: 'col-sm-4 control-label required'  %>
-        <div class="col-sm-5">
-            <%= f.text_field :cumulative_gpa, :style => "width:100%;", :placeholder => "Cumulative GPA", class: 'form-control'  %>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <%= f.label :sat_score, 'SAT Score', class: 'col-sm-4 control-label required'  %>
-        <div class="col-sm-5">
-            <%= f.text_field :sat_score, :style => "width:100%;", :placeholder => "SAT Score", class: 'form-control'  %>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <%= f.label :classes_now, 'Classes Now', class: 'col-sm-4 control-label required'  %>
-        <div class="col-sm-5">
-            <%= f.text_area :classes_now, :placeholder => "Classes you are taking this semester", class: 'form-control'  %>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <%= f.label :extracurriculars, class: 'col-sm-4 control-label required'  %>
-        <div class="col-sm-5">
-            <%= f.text_area :extracurriculars, :placeholder => "Extracurricular activities you are involved in and leadership positions you hold", class: 'form-control'  %>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <%= f.label :resume, class: 'col-sm-4 control-label required'  %>
-        <div class="col-sm-5">
-            <%= f.file_field :resume, class: 'form-control'  %>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <%= f.label :cover_letter, 'Cover Letter', class: 'col-sm-4 control-label required'  %>
-        <div class="col-sm-5">
-            <%= f.file_field :cover_letter, class: 'form-control'  %>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <%= f.label :transcript, 'Unofficial Transcript', class: 'col-sm-4 control-label'  %>
-        <div class="col-sm-5">
-            <%= f.file_field :transcript, class: 'form-control'  %>
-        </div>
-      </div>
-
-      <div class="col-sm-4">
-      </div>
+    <br>
+    
+    <div class="form-group">
+      <%= f.label :first_name, 'First Name', class: 'col-sm-4 control-label required'  %>
       <div class="col-sm-5">
-        <i style="font-size:0.8em;">Attaching your unofficial transcript is not required but highly recommended</i>
+          <%= f.text_field :first_name, :style => "width:100%;", :placeholder => "First Name", autofocus: true, class: 'form-control'  %>
       </div>
+    </div>
 
-      <br><br>
-
-      <div class="form-group submit-button">
-          <%= f.submit "Submit Application", class: 'btn btn-primary'  %>
+    <div class="form-group">
+      <%= f.label :last_name, 'Last Name', class: 'col-sm-4 control-label required'  %>
+      <div class="col-sm-5">
+          <%= f.text_field :last_name, :style => "width:100%;", :placeholder => "Last Name", class: 'form-control'  %>
       </div>
-    <% end %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :email, class: 'col-sm-4 control-label required'  %>
+      <div class="col-sm-5">
+          <%= f.text_field :email, :style => "width:100%;", :placeholder => "Email", class: 'form-control'  %>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :phone_number, 'Phone Number', class: 'col-sm-4 control-label required'  %>
+      <div class="col-sm-5">
+          <%= f.text_field :phone_number, :style => "width:100%;", :placeholder => "Phone Number", class: 'form-control'  %>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :hometown, class: 'col-sm-4 control-label required'  %>
+      <div class="col-sm-5">
+          <%= f.text_field :hometown, :style => "width:100%;", :placeholder => "Hometown", class: 'form-control'  %>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :year, class: 'col-sm-4 control-label required'  %>
+      <div class="col-sm-5">
+          <%= f.select :year, [['Freshman', 1], ['Sophomore', 2], ['Junior', 3], ['Junior Transfer', 4], ['Senior', 5]] %>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :major, class: 'col-sm-4 control-label required'  %>
+      <div class="col-sm-5">
+          <%= f.text_field :major, :style => "width:100%;", :placeholder => "Major", class: 'form-control'  %>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :major_gpa, 'Major GPA', class: 'col-sm-4 control-label required'  %>
+      <div class="col-sm-5">
+          <%= f.text_field :major_gpa, :style => "width:100%;", :placeholder => "Major GPA", class: 'form-control'  %>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :cumulative_gpa, 'Cumulative GPA', class: 'col-sm-4 control-label required'  %>
+      <div class="col-sm-5">
+          <%= f.text_field :cumulative_gpa, :style => "width:100%;", :placeholder => "Cumulative GPA", class: 'form-control'  %>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :sat_score, 'SAT Score', class: 'col-sm-4 control-label required'  %>
+      <div class="col-sm-5">
+          <%= f.text_field :sat_score, :style => "width:100%;", :placeholder => "SAT Score", class: 'form-control'  %>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :classes_now, 'Classes', class: 'col-sm-4 control-label required'  %>
+      <div class="col-sm-5">
+          <%= f.text_area :classes_now, :placeholder => "All classes you are taking this semester", class: 'form-control'  %>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :extracurriculars, class: 'col-sm-4 control-label required'  %>
+      <div class="col-sm-5">
+          <%= f.text_area :extracurriculars, :placeholder => "Leadership positions you hold and extracurricular activities you are involved in (Include number of hours per week for each commitment)", class: 'form-control'  %>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :resume, 'Resume (PDF)', class: 'col-sm-4 control-label required'  %>
+      <div class="col-sm-5">
+          <%= f.file_field :resume, class: 'form-control'  %>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :cover_letter, 'Cover Letter (PDF)', class: 'col-sm-4 control-label required'  %>
+      <div class="col-sm-5">
+          <%= f.file_field :cover_letter, class: 'form-control'  %>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :transcript, 'Unofficial Transcript (PDF)', class: 'col-sm-4 control-label'  %>
+      <div class="col-sm-5">
+          <%= f.file_field :transcript, class: 'form-control'  %>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+    </div>
+    <div class="col-sm-5">
+      <i style="font-size:0.8em;">Attaching your unofficial transcript is not required but strongly recommended</i>
+    </div>
+
+    <br><br>
+
+    <div class="form-group submit-button">
+        <%= f.submit "Submit Application", class: 'btn btn-primary'  %>
+    </div>
+  <% end %>
   </div>
 </div>
