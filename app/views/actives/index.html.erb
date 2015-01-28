@@ -13,9 +13,34 @@
 
   <br>
 
+  <% @eboard_actives = [] %>
+  <% @noneboard_actives = [] %>
+  <% for i in 0 ... @actives.size %>
+  	<% if !@actives[i].eboard_position.empty? %>
+  		<% @eboard_actives.push(@actives[i]) %>
+  	<% else %>
+  		<% @noneboard_actives.push(@actives[i]) %>
+  	<% end %>
+  <% end %>
+
   <div class="actives-wrapper">
+
+  	<p class="subheading">Executive Board</p>
+  	<ul class="actives-thumbnails">
+			<% @eboard_actives.each do |a| %>
+				<% if (a.display && a.photo?) %>
+					<li>
+						<%= link_to image_tag(a.photo.url(:small)), active_path(a) %>
+						<p><%= a.name %></p>
+						<p style="font-size:0.8em;"><%= a.eboard_position %></p>
+					</li>
+				<% end %>
+			<% end %>
+		</ul>
+
+		<p class="subheading">Active Brothers</p>
 		<ul class="actives-thumbnails">
-			<% @actives.each do |a| %>
+			<% @noneboard_actives.each do |a| %>
 				<% if (a.display && a.photo?) %>
 					<li>
 						<%= link_to image_tag(a.photo.url(:small)), active_path(a) %>

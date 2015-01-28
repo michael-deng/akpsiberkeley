@@ -12,6 +12,17 @@
   background-size: cover;
 }
 
+.actives-wrapper {
+  width: 75%;
+  text-align: center;
+  margin: auto;
+}
+
+.actives-wrapper .subheading {
+  font-size: 2em;
+  padding-top: 1em;
+}
+
 .actives-thumbnails {
   text-align: center;
 }
@@ -23,6 +34,7 @@
 
 .actives-thumbnails li p {
   margin-top: 5px;
+  margin-bottom: -5px;
 }
 
 
@@ -38,8 +50,6 @@
 }
 
 .actives-profile-wrapper {
-  width: 70%;
-  margin: auto;
   padding-top: 3em;
   padding-bottom: 3em;
   text-align: center;
@@ -72,7 +82,7 @@
 /*** ACTIVE BROTHERS LOG IN PAGE CUSTOMIZATIONS ***/
 
 #login-banner {
-  background: image_url("silly_banner.jpg") no-repeat center center;
+  background: image_url("beach_banner.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
