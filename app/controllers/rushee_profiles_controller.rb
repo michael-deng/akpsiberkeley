@@ -13,4 +13,8 @@ class RusheeProfilesController < ApplicationController
 		@rushee_comments = @rushee_profile.rushee_comments.all
 		@rushee_comment = @rushee_profile.rushee_comments.build if active_signed_in?
 	end
+
+	def destroy
+		@rushee_profile.destroy
+	end
 end
