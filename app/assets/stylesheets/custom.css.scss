@@ -4,7 +4,7 @@
 /* Create responsive texts by making all font-size values percentages of these base values */
 
 /* Large desktops and laptops */
-@media (min-width: 1200px) {
+@media (min-width: 1150px) {
   body{font-size:16px;}
 }
 
@@ -28,8 +28,8 @@
   body{font-size:8px;}
 }
 
-/* Change when the navbar collapses from 768px to 1000px */
-@media (max-width: 1000px) {
+/* Change when the navbar collapses from 768px to 1200px */
+@media (max-width: 1200px) {
   .navbar-header {
     float: none;
   }
