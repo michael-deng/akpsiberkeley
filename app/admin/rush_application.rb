@@ -1,7 +1,7 @@
 ActiveAdmin.register RushApplication do
 
-  permit_params :first_name, :last_name, :email, :phone_number, :hometown, :year, :major, :major_gpa,
-                :cumulative_gpa, :sat_score, :haas, :classes_now, :extracurriculars, :cut
+  permit_params :first_name, :last_name, :email, :phone_number, :hometown, :year, :major, :major_gpa, :cumulative_gpa, 
+                :sat_score, :haas, :classes_now, :extracurriculars, :resume, :cover_letter, :transcript, :cut
 
 
   # See permitted parameters documentation:
@@ -31,6 +31,9 @@ ActiveAdmin.register RushApplication do
     column :sat_score
     column :classes_now
     column :extracurriculars
+    column :resume
+    column :cover_letter
+    column :transcript
     column :cut
     actions
   end
@@ -49,6 +52,9 @@ ActiveAdmin.register RushApplication do
       f.input :sat_score
       f.input :classes_now
       f.input :extracurriculars
+      f.input :resume
+      f.input :cover_letter
+      f.input :transcript
       f.input :cut
     end
     f.actions

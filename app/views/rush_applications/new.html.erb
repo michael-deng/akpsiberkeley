@@ -18,37 +18,37 @@
     <%= form_for(@rush_application, html: { class: 'form-horizontal' }) do |f| %>
       
       <div class="form-group">
-        <%= f.label :first_name, class: 'col-sm-4 control-label'  %>
+        <%= f.label :first_name, 'First Name', class: 'col-sm-4 control-label'  %>
         <div class="col-sm-5">
-            <%= f.text_field :first_name, :style => "width:100%;", autofocus: true, class: 'form-control'  %>
+            <%= f.text_field :first_name, :style => "width:100%;", :placeholder => "First Name", autofocus: true, class: 'form-control'  %>
         </div>
       </div>
 
       <div class="form-group">
-        <%= f.label :last_name, class: 'col-sm-4 control-label'  %>
+        <%= f.label :last_name, 'Last Name', class: 'col-sm-4 control-label'  %>
         <div class="col-sm-5">
-            <%= f.text_field :last_name, :style => "width:100%;", class: 'form-control'  %>
+            <%= f.text_field :last_name, :style => "width:100%;", :placeholder => "Last Name", class: 'form-control'  %>
         </div>
       </div>
 
       <div class="form-group">
         <%= f.label :email, class: 'col-sm-4 control-label'  %>
         <div class="col-sm-5">
-            <%= f.text_field :email, :style => "width:100%;", class: 'form-control'  %>
+            <%= f.text_field :email, :style => "width:100%;", :placeholder => "Email", class: 'form-control'  %>
         </div>
       </div>
 
       <div class="form-group">
-        <%= f.label :phone_number, class: 'col-sm-4 control-label'  %>
+        <%= f.label :phone_number, 'Phone Number', class: 'col-sm-4 control-label'  %>
         <div class="col-sm-5">
-            <%= f.text_field :phone_number, :style => "width:100%;", class: 'form-control'  %>
+            <%= f.text_field :phone_number, :style => "width:100%;", :placeholder => "Phone Number", class: 'form-control'  %>
         </div>
       </div>
 
       <div class="form-group">
         <%= f.label :hometown, class: 'col-sm-4 control-label'  %>
         <div class="col-sm-5">
-            <%= f.text_field :hometown, :style => "width:100%;", class: 'form-control'  %>
+            <%= f.text_field :hometown, :style => "width:100%;", :placeholder => "Hometown", class: 'form-control'  %>
         </div>
       </div>
 
@@ -62,42 +62,63 @@
       <div class="form-group">
         <%= f.label :major, class: 'col-sm-4 control-label'  %>
         <div class="col-sm-5">
-            <%= f.text_field :major, :style => "width:100%;", class: 'form-control'  %>
+            <%= f.text_field :major, :style => "width:100%;", :placeholder => "Major", class: 'form-control'  %>
         </div>
       </div>
 
       <div class="form-group">
-        <%= f.label :major_gpa, class: 'col-sm-4 control-label'  %>
+        <%= f.label :major_gpa, 'Major GPA', class: 'col-sm-4 control-label'  %>
         <div class="col-sm-5">
-            <%= f.text_field :major_gpa, :style => "width:100%;", class: 'form-control'  %>
+            <%= f.text_field :major_gpa, :style => "width:100%;", :placeholder => "Major GPA", class: 'form-control'  %>
         </div>
       </div>
 
       <div class="form-group">
-        <%= f.label :cumulative_gpa, class: 'col-sm-4 control-label'  %>
+        <%= f.label :cumulative_gpa, 'Cumulative GPA', class: 'col-sm-4 control-label'  %>
         <div class="col-sm-5">
-            <%= f.text_field :cumulative_gpa, :style => "width:100%;", class: 'form-control'  %>
+            <%= f.text_field :cumulative_gpa, :style => "width:100%;", :placeholder => "Cumulative GPA", class: 'form-control'  %>
         </div>
       </div>
 
       <div class="form-group">
-        <%= f.label :sat_score, class: 'col-sm-4 control-label'  %>
+        <%= f.label :sat_score, 'SAT Score', class: 'col-sm-4 control-label'  %>
         <div class="col-sm-5">
-            <%= f.text_field :sat_score, :style => "width:100%;", class: 'form-control'  %>
+            <%= f.text_field :sat_score, :style => "width:100%;", :placeholder => "SAT Score", class: 'form-control'  %>
         </div>
       </div>
 
       <div class="form-group">
-        <%= f.label :classes_now, 'Classes this semester', class: 'col-sm-4 control-label'  %>
+        <%= f.label :classes_now, 'Classes Now', class: 'col-sm-4 control-label'  %>
         <div class="col-sm-5">
-            <%= f.text_area :classes_now, class: 'form-control'  %>
+            <%= f.text_area :classes_now, :placeholder => "Classes you are taking this semester", class: 'form-control'  %>
         </div>
       </div>
 
       <div class="form-group">
         <%= f.label :extracurriculars, class: 'col-sm-4 control-label'  %>
         <div class="col-sm-5">
-            <%= f.text_area :extracurriculars, class: 'form-control'  %>
+            <%= f.text_area :extracurriculars, :placeholder => "Extracurricular activities you are involved in and leadership positions you hold", class: 'form-control'  %>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <%= f.label :resume, class: 'col-sm-4 control-label'  %>
+        <div class="col-sm-5">
+            <%= f.file_field :resume, class: 'form-control'  %>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :cover_letter, class: 'col-sm-4 control-label'  %>
+        <div class="col-sm-5">
+            <%= f.file_field :cover_letter, class: 'form-control'  %>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :transcript, class: 'col-sm-4 control-label'  %>
+        <div class="col-sm-5">
+            <%= f.file_field :transcript, class: 'form-control'  %>
         </div>
       </div>
 
