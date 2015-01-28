@@ -18,14 +18,18 @@
     		<li><%= link_to "Active Brothers", actives_path %></li>
     		<li><%= link_to "Careers", career_entries_path(:year => "2015") %></li>
     		<li><%= link_to "Awards", awards_path %></li>
-    		<!-- <li><%= link_to "Corporate Consulting", bcs_path %></li>
-    		<li><%= link_to "Non-profit Consulting", abc_path %></li>
-    	    <li><%= link_to "Start-up Incubator", abv_path %></li> -->
-    		<li><%= link_to "Rush", rush_path %></li>
+    		<li class="dropdown">
+                <%= link_to "What We Do", '#' %>
+                <ul class="dropdown-menu">
+                    <li><a href="http://www.berkeleycorporatesolutions.org/">Berkeley Corporate Solutions</a></li>
+                    <li><a href="http://abventures.herokuapp.com/">Alpha Beta Ventures</a></li>
+                </ul>
+            </li>
             <% if active_signed_in? %>
                 <li><%= link_to "Rushees", rushee_profiles_path %></li>
                 <li><%= link_to "Sign Out", destroy_active_session_path, :method => :delete %></li>
             <% else %>
+                <li><%= link_to "Rush", rush_path %></li>
                 <li><%= link_to "Active Brother Login", active_session_path %></li>
             <% end %>
     	</ul>

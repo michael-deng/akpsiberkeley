@@ -161,6 +161,23 @@ nav .container-fluid {
 	margin-top: 15px;
 }
 
+/*** Header Dropdown Menu Customizations ***/
+
+.dropdown a:hover {
+  color: #333;
+  background: #f2f2f2;
+  text-decoration: none;
+}
+
+.dropdown ul{
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dropdown:hover ul{
+  display: inline; /* display the dropdown */
+}
+
 
 
 /*** FOOTER NAVBAR CUSTOMIZATIONS ***/
