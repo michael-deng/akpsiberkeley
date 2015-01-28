@@ -13,7 +13,7 @@ class RushApplication < ActiveRecord::Base
   										content_type: {content_type: "application/pdf"},
   										size: {in: 0..1.megabytes}
 
-  validates :first_name, :last_name 
+  validates :first_name, :last_name,
     presence: true, 
     length: { maximum: 50 }
   
