@@ -14,7 +14,7 @@
   <div class="rush-application-wrapper">
     <div class="rush-application-info">
       <p>Spring 2015 Rush Application</p>
-      Fill out this application to apply for Alpha Kappa Psi. All majors are welcome. We require a GPA minimum of 3.3. Your resume and cover letter should be no more than one page in length. For your cover letter, make sure to address what you hope to gain from Alpha Kappa Psi, what you can contribute to Alpha Kappa Psi, and how you stand out from other candidates. Applications are due at 11:59pm on Friday, January 30.
+      Fill out this application to apply for Alpha Kappa Psi. All majors are welcome. We require a GPA minimum of 3.3. All attachments should be in PDF format. Your resume and cover letter should be no more than one page in length. For your cover letter, make sure to address what you hope to gain from Alpha Kappa Psi, what you can contribute to Alpha Kappa Psi, and how you stand out from other candidates. Applications are due at 11:59pm on Friday, January 30.
     </div>
     <%= form_for(@rush_application, html: { class: 'form-horizontal' }) do |f| %>
 
@@ -109,21 +109,21 @@
     </div>
 
     <div class="form-group">
-      <%= f.label :resume, 'Resume', class: 'col-sm-4 control-label required'  %>
+      <%= f.label :resume, 'Resume (PDF)', class: 'col-sm-4 control-label required'  %>
       <div class="col-sm-5">
           <%= f.file_field :resume, class: 'form-control'  %>
       </div>
     </div>
 
     <div class="form-group">
-      <%= f.label :cover_letter, 'Cover Letter', class: 'col-sm-4 control-label required'  %>
+      <%= f.label :cover_letter, 'Cover Letter (PDF)', class: 'col-sm-4 control-label required'  %>
       <div class="col-sm-5">
           <%= f.file_field :cover_letter, class: 'form-control'  %>
       </div>
     </div>
 
     <div class="form-group">
-      <%= f.label :transcript, 'Unofficial Transcript', class: 'col-sm-4 control-label'  %>
+      <%= f.label :transcript, 'Unofficial Transcript (PDF)', class: 'col-sm-4 control-label'  %>
       <div class="col-sm-5">
           <%= f.file_field :transcript, class: 'form-control'  %>
       </div>
@@ -132,7 +132,7 @@
     <div class="col-sm-4">
     </div>
     <div class="col-sm-5">
-      <i style="font-size:0.8em;">Attaching your unofficial transcript is not required but strongly recommended</i>
+      <i style="font-size:0.8em;">Attaching your unofficial transcript is strongly recommended</i>
     </div>
 
     <br><br>
