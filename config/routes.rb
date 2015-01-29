@@ -22,16 +22,17 @@ Akpsiberkeley::Application.routes.draw do
   resources :rushees, only: [:index, :show]
 
   root "static_pages#home"
-  match '/about',           to: 'static_pages#about',           via: 'get'
-  match '/careers',         to: 'static_pages#careers',         via: 'get'
-  match '/awards',          to: 'static_pages#awards',          via: 'get'
-  match '/abc',             to: 'static_pages#abc',             via: 'get'
-  match '/bcs',             to: 'static_pages#bcs',             via: 'get'
-  match '/abv',             to: 'static_pages#abv',             via: 'get'
-  match '/rush',            to: 'static_pages#rush',            via: 'get'
-  match '/faq',             to: 'static_pages#faq',             via: 'get'
-  match '/contact',         to: 'static_pages#contact',         via: 'get'
-  match '/eboard_actives',  to: 'static_pages#eboard_actives',  via: 'get'
+  match '/about',                 to: 'static_pages#about',                 via: 'get'
+  match '/careers',               to: 'static_pages#careers',               via: 'get'
+  match '/awards',                to: 'static_pages#awards',                via: 'get'
+  match '/abc',                   to: 'static_pages#abc',                   via: 'get'
+  match '/bcs',                   to: 'static_pages#bcs',                   via: 'get'
+  match '/abv',                   to: 'static_pages#abv',                   via: 'get'
+  match '/rush',                  to: 'static_pages#rush',                  via: 'get'
+  match '/faq',                   to: 'static_pages#faq',                   via: 'get'
+  match '/contact',               to: 'static_pages#contact',               via: 'get'
+  match '/eboard_actives',        to: 'static_pages#eboard_actives',        via: 'get'
+  match '/application_submitted', to: 'static_pages#application_submitted', via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

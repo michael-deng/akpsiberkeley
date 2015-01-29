@@ -9,7 +9,7 @@ class RushApplicationsController < ApplicationController
 	def create
 		@rush_application = RushApplication.new(rush_application_params)
     if @rush_application.save
-      redirect_to root_path
+      redirect_to application_submitted_path
     else
       render 'new'
     end
