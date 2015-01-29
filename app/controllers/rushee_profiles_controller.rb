@@ -1,5 +1,5 @@
 class RusheeProfilesController < ApplicationController
-
+	
 	before_action :authenticate_active!, only: [:show, :index]
 
 	def index
