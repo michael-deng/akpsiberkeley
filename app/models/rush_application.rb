@@ -9,13 +9,13 @@ class RushApplication < ActiveRecord::Base
 	has_attached_file :transcript
 
 	validates_attachment :resume, :cover_letter,
-                      content_type: {content_type: "application/pdf"},
                       presence: true,
                       size: {in: 0..1.megabytes}
 
   validates_attachment :transcript,
-  										content_type: {content_type: "application/pdf"},
   										size: {in: 0..1.megabytes}
+
+  validates_format_of :resume, :cover_letter, :transcript, :with => %r{\.(docx|doc|pdf)$}i
 
   validates :first_name, :last_name,
     presence: true, 
