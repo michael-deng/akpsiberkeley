@@ -10,7 +10,7 @@ class RusheeProfilesController < ApplicationController
 
 	def show
 		@rushee_profile = RusheeProfile.find(params[:id])
-		@rushee_comments = @rushee_profile.rushee_comments.all
+		@rushee_comments = @rushee_profile.rushee_comments.find( :all, :order => "created_at DESC" )
 		@rushee_comment = @rushee_profile.rushee_comments.build if active_signed_in?
 	end
 
