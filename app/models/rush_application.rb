@@ -15,7 +15,7 @@ class RushApplication < ActiveRecord::Base
   validates_attachment :transcript,
   										size: {in: 0..1.megabytes}
 
-  validates_format_of :resume, :cover_letter, :transcript, :with => %r{\.(docx|doc|pdf)$}i
+  validates_format_of :resume, :cover_letter, :transcript, :with => %r{\.(docx|doc|pdf)\z}i
 
   validates :first_name, :last_name,
     presence: true, 
