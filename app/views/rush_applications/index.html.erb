@@ -4,7 +4,7 @@
   <div class="banner" id="rushees-banner">
     <div class="dark-layer">
     	<div class="banner-text">
-        Rushees
+        Rush Applications
         <hr>
         <p class="caption">List of all rush applications</p>
       </div>
@@ -16,9 +16,9 @@
   <div class="rushees-wrapper">
 		<ul class="rushees-thumbnails">
 			<% @rush_applications.each do |r| %>
-				<% @full_name = r.first_name + r.last_name %>
 				<li>
-					<%= link_to @full_name, rush_application_path(r) %>
+					<%= link_to r.first_name, rush_application_path(r) %>
+					<%= link_to r.last_name, rush_application_path(r) %>
 				</li>
 			<% end %>
 		</ul>
