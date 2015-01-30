@@ -1,1 +1,45 @@
-<% provide(:title, "Rushee Profiles") %>
+<% provide(:title, "Rush Application") %>
+
+<div class="center-content">
+  <div class="banner" id="rushees-banner">
+    <div class="dark-layer">
+    	<div class="banner-text">
+        Rush Applications
+        <hr>
+        <p class="caption">Individual applications</p>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="rush-application-show-wrapper">
+			<span>Full Name:</span> <%= @rush_application.first_name %> <%= @rush_application.last_name %>
+			<br>
+			<span>Email:</span> <%= @rush_application.email %>
+			<br>
+			<span>Phone Number:</span> <%= @rush_application.phone_number %>
+			<br>
+			<span>Hometown:</span> <%= @rush_application.hometown %>
+			<br>
+			<span>Year:</span> <%= @rush_application.year %>
+			<br>
+			<span>Major:</span> <%= @rush_application.major %>
+			<br>
+			<span>Major GPA:</span> <%= @rush_application.major_gpa %>
+			<br>
+			<span>Cumulative GPA:</span> <%= @rush_application.cumulative_gpa %>
+			<br>
+			<span>SAT Score:</span> <%= @rush_application.sat_score %>
+			<br>
+			<span>Classes:</span> <%= @rush_application.classes_now %>
+			<br>
+			<span>Extracurriculars:</span> <%= @rush_application.extracurriculars %>
+			<br>
+			<span>Resume:</span><%= link_to "Download", @rush_application.resume.url(:original, false) %>
+			<br>
+			<span>Cover Letter:</span><%= link_to "Download", @rush_application.cover_letter.url(:original, false) %>
+			<br>
+			<span>Transcript:</span><%= link_to "Download", @rush_application.transcript.url(:original, false) %>
+	</div>
+</div>

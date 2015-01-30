@@ -34,7 +34,6 @@ ActiveAdmin.register RushApplication do
     column :resume
     column :cover_letter
     column :transcript
-    column :cut
     actions
   end
 
@@ -55,7 +54,6 @@ ActiveAdmin.register RushApplication do
       f.input :resume
       f.input :cover_letter
       f.input :transcript
-      f.input :cut
     end
     f.actions
   end

@@ -6,7 +6,7 @@
     	<div class="banner-text">
         Rushees
         <hr>
-        <p class="caption">The Hunger Games</p>
+        <p class="caption">List of all rush applications</p>
       </div>
     </div>
   </div>
@@ -16,12 +16,10 @@
   <div class="rushees-wrapper">
 		<ul class="rushees-thumbnails">
 			<% @rush_applications.each do |r| %>
-				<% if (!r.cut && r.photo?) %>
-					<li>
-						<%= link_to image_tag(r.photo.url(:small)), rushee_path(r) %>
-						<p><%= r.name %></p>
-					</li>
-				<% end %>
+				<% @full_name = r.first_name + r.last_name %>
+				<li>
+					<%= link_to @full_name, rush_application_path(r) %>
+				</li>
 			<% end %>
 		</ul>
 	</div>

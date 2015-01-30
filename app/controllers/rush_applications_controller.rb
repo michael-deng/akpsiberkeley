@@ -21,7 +21,7 @@ class RushApplicationsController < ApplicationController
 	end
 
 	def show
-		@rush_application = rush_application.find(params[:id])
+		@rush_application = RushApplication.find(params[:id])
 	end
 
 	private
