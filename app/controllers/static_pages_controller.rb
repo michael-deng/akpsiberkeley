@@ -6,15 +6,6 @@ class StaticPagesController < ApplicationController
   def about
   end
 
-  def abc
-  end
-
-  def bcs
-  end
-
-  def abv
-  end
-
   def rush
   end
 
@@ -32,5 +23,8 @@ class StaticPagesController < ApplicationController
         @eboard_actives.push(@actives[i])
       end
     end
+  end
+
+  def professional_services
   end
 end
