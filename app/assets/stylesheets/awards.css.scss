@@ -13,7 +13,7 @@
 }
 
 .awards-table-wrapper {
-  width: 80%;
+  width: 85%;
   margin: auto;
   text-align: center;
 }
@@ -22,7 +22,6 @@
   background: none;
   font-size: 1.1em;
   border-bottom-width: 2px;
-  width: 40%;
 }
 
 // Customize the awards table year subheadings eg. 2014
@@ -32,5 +31,13 @@
 }
 
 #placement-column {
-	width: 20%;
+	width: 15%;
+}
+
+#actives-column {
+  width: 45;
+}
+
+#competition-column {
+  width: 40%;
 }

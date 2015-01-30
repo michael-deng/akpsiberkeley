@@ -54,8 +54,6 @@
 			<br>
 			<span>Cover Letter:</span> <%= link_to "Download", @rush_application.cover_letter.url(:original, false) %>
 			<br>
-			<% if !@rush_application.transcript.empty? %>
-				<span>Transcript:</span> <%= link_to "Download", @rush_application.transcript.url(:original, false) %>
-			<% end %>
+			<span>Transcript:</span> <%= link_to "Download", @rush_application.transcript.url(:original, false) %>
 	</div>
 </div>
