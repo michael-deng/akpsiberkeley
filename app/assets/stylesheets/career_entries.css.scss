@@ -41,7 +41,7 @@
 }
 
 .careers-table-wrapper {
-  width: 80%;
+  width: 85%;
   margin: auto;
   text-align: center;
   font-family: "cyntho_proregular", sans-serif;
@@ -55,8 +55,23 @@
   background: none;
   font-size: 1.2em;
   border-bottom-width: 2px;
-  width: 25%;
   //border-color: #00acee;
+}
+
+.name {
+  width: 20%;
+}
+
+.company {
+  width: 25%;
+}
+
+.group {
+  width: 35%;
+}
+
+.location {
+  width: 20%;
 }
 
 // Customize the careers table subheadings eg. Investment Banking
