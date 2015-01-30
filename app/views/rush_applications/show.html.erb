@@ -13,6 +13,18 @@
 
   <br>
 
+  <% if @rush_application.year == '1' %>
+  	<% grade = "Freshman" %>
+  <% elsif @rush_application.year == '2' %>
+  	<% grade = "Sophomore" %>
+  <% elsif @rush_application.year == '3' %>
+  	<% grade = "Junior" %>
+  <% elsif @rush_application.year == '4' %>
+  	<% grade = "Junior Transfer" %>
+  <% elsif @rush_application.year == '5' %>
+  	<% grade = "Senior" %>
+  <% end %>
+
   <div class="rush-application-show-wrapper">
 			<span>First Name:</span> <%= @rush_application.first_name %>
 			<br>
@@ -24,7 +36,7 @@
 			<br>
 			<span>Hometown:</span> <%= @rush_application.hometown %>
 			<br>
-			<span>Year:</span> <%= @rush_application.year %>
+			<span>Year:</span> <%= grade %>
 			<br>
 			<span>Major:</span> <%= @rush_application.major %>
 			<br>
@@ -38,10 +50,10 @@
 			<br>
 			<span>Extracurriculars:</span> <%= @rush_application.extracurriculars %>
 			<br>
-			<span>Resume:</span><%= link_to "Download", @rush_application.resume.url(:original, false) %>
+			<span>Resume:</span> <%= link_to "Download", @rush_application.resume.url(:original, false) %>
 			<br>
-			<span>Cover Letter:</span><%= link_to "Download", @rush_application.cover_letter.url(:original, false) %>
+			<span>Cover Letter:</span> <%= link_to "Download", @rush_application.cover_letter.url(:original, false) %>
 			<br>
-			<span>Transcript:</span><%= link_to "Download", @rush_application.transcript.url(:original, false) %>
+			<span>Transcript:</span> <%= link_to "Download", @rush_application.transcript.url(:original, false) %>
 	</div>
 </div>
