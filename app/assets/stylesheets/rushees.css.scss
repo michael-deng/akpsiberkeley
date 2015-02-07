@@ -2,23 +2,3 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#rushees-banner {
-  background: image_url("nibs_banner.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.rushees-thumbnails {
-  text-align: center;
-}
-
-.rushees-thumbnails li {
-  display: inline-block;
-  margin: 10px;
-}
-
-.rushees-thumbnails li p {
-  margin-top: 5px;
-}
