@@ -72,6 +72,20 @@
           </thead>
 
           <tr class="subheading">
+            <td><b>2015</b></td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <% for i in 0 ... @awards_2015.size %>
+            <tr>
+              <td><%= @awards_2015[i].placement %></td>
+              <td><%= @awards_2015[i].members %></td>
+              <td><%= @awards_2015[i].name %></td>
+            </tr>
+          <% end %>
+
+          <tr class="subheading">
             <td><b>2014</b></td>
             <td></td>
             <td></td>

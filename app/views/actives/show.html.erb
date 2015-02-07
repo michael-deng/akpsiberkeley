@@ -18,7 +18,9 @@
     <hr>
     <div class="row">
       <div class="col-md-3">
-        <%= image_tag(@active.photo.url(:medium)) %>
+        <% if @active.photo? %>
+          <%= image_tag(@active.photo.url(:medium)) %>
+        <% end %>
       </div>
       <div class="col-md-9">
         <ul class="actives-profile-info">
