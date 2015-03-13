@@ -3,7 +3,6 @@ Akpsiberkeley::Application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 
-  devise_for :rushees
   devise_for :actives
 
   resources :career_entries, only: [:index]
@@ -18,8 +17,6 @@ Akpsiberkeley::Application.routes.draw do
     resources :career_entries
     resources :awards
   end
-
-  resources :rushees, only: [:index, :show]
 
   root "static_pages#home"
   match '/about',                 to: 'static_pages#about',                 via: 'get'
