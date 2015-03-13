@@ -15,7 +15,7 @@
     <% if current_active == @active %>
       <span class="options-heading">Active Resources</span>
       <ul class="options">
-        <li><a href="<li><a href="https://www.dropbox.com/sh/7727oqx2sawoh3k/AABMWqNcfC__w-svqURfEaSMa?dl=0">Academic Master Document</a></li>
+        <li><a href="https://docs.google.com/spreadsheets/d/1ZQf2EZyASGocMXhc2nz31YLwbnAU0DYJKE5CQCnopB8/edit?usp=asogm">Academic Master Document</a></li>
         <li><a href="https://www.dropbox.com/sh/s1ycnfbqcagyese/AAA3oE0fVpOnDHWgbs3wERh-a?dl=0">Recruiting Resources</a></li>
         <li><a href="https://www.dropbox.com/sh/jgep1j5ncfy1awc/AACBwM5IT3lFBoYjpYPqlDcSa?dl=0">Test Bank</a></li>
         <li><a href="https://www.dropbox.com/sh/t3k25nk0hits6cm/AADWA3RF4CKKjcpMzVtmaSPga?dl=0">Textbooks</a></li>
@@ -28,6 +28,9 @@
     <br>
     <div class="actives-profile-heading">
       <%= @active.name %>
+      <% if current_active == @active %>
+        <div class="edit"><%= link_to "Edit Account Information", edit_active_registration_path(current_active) %></div>
+      <% end %>
     </div>
     <hr>
     <div class="row">
