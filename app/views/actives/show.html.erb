@@ -12,6 +12,20 @@
   </div>
 
   <div class="actives-profile-wrapper">
+    <% if current_active == @active %>
+      <span class="options-heading">Active Resources</span>
+      <ul class="options">
+        <li><a href="<li><a href="https://www.dropbox.com/sh/7727oqx2sawoh3k/AABMWqNcfC__w-svqURfEaSMa?dl=0">Academic Master Document</a></li>
+        <li><a href="https://www.dropbox.com/sh/s1ycnfbqcagyese/AAA3oE0fVpOnDHWgbs3wERh-a?dl=0">Recruiting Resources</a></li>
+        <li><a href="https://www.dropbox.com/sh/jgep1j5ncfy1awc/AACBwM5IT3lFBoYjpYPqlDcSa?dl=0">Test Bank</a></li>
+        <li><a href="https://www.dropbox.com/sh/t3k25nk0hits6cm/AADWA3RF4CKKjcpMzVtmaSPga?dl=0">Textbooks</a></li>
+        <li><a href="https://www.dropbox.com/sh/w190z997rbtsg6q/AABLh5OYyRFsEev-9C_u0QqYa?dl=0">Solution Manuals</a></li>
+        <li><a href="https://www.dropbox.com/sh/7727oqx2sawoh3k/AABMWqNcfC__w-svqURfEaSMa?dl=0">Composites</a></li>
+        <li><a href="mailto:akpsiwatchdog@gmail.com">Send Watchdog</a></li>
+      </ul>
+    <% end %>
+    <br>
+    <br>
     <div class="actives-profile-heading">
       <%= @active.name %>
     </div>

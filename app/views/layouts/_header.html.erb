@@ -39,6 +39,7 @@
                         <li><%= link_to "Applications", rush_applications_path %></li>
                     </ul>
                 </li>
+                <li><%= link_to "Profile", current_active %>
                 <li><%= link_to "Sign Out", destroy_active_session_path, :method => :delete %></li>
             <% else %>
                 <li><%= link_to "Rush", rush_path %></li>
