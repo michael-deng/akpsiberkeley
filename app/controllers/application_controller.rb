@@ -8,8 +8,6 @@ class ApplicationController < ActionController::Base
   def after_sign_in_path_for(resource)
     if resource.is_a?(Active)
       active_path(resource)
-    elsif resource.is_a?(Rushee)
-      rushee_path(resource)
     else
       root_path
     end
@@ -21,11 +19,11 @@ class ApplicationController < ActionController::Base
       devise_parameter_sanitizer.for(:sign_up) << :name
       devise_parameter_sanitizer.for(:account_update) { |u| u.permit(:name, :first_name, :last_name, :email, :phone_number, :major, 
       																																:year, :eboard_position, :hometown, :pledge_class, 
-      																																:previous_positions, :linkedin, :biography, :placement, :gpa, 
-      																																:major_gpa, :cumulative_gpa, :sat_score, :courses_and_grades, 
-      																																:haas, :classes_now, :extracurriculars, :photo, :password, 
-                                                                      :password_confirmation, :current_password, :photo_file_name, 
-                                                                      :photo_content_type, :photo_file_size, :photo_updated_at) }
+      																																:previous_positions, :linkedin, :biography, :placement, 
+      																																:major_gpa, :cumulative_gpa, :sat_score, :classes_now, 
+                                                                      :extracurriculars, :photo, :password, :password_confirmation, 
+                                                                      :current_password, :photo_file_name, :photo_content_type, 
+                                                                      :photo_file_size, :photo_updated_at) }
     end
 
 end
