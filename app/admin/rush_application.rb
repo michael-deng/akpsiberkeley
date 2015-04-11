@@ -18,7 +18,7 @@ ActiveAdmin.register RushApplication do
   # end
 
   index do
-    id_column
+    selectable_column
     column :first_name
     column :last_name
     column :email
