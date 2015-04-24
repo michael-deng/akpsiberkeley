@@ -10,7 +10,6 @@ class RusheeCommentsController < ApplicationController
 		if @rushee_comment.save
 			flash[:success] = "Comment created!"
 			redirect_to @rushee_profile
-
 		else
 			flash[:error] = "There was an error with your comment; please try again."
 			redirect_to @rushee_profile
