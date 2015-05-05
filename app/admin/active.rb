@@ -43,7 +43,6 @@ ActiveAdmin.register Active do
       f.input :linkedin, :label => "LinkedIn url"
       f.input :display, :label => "Show on brothers page"
       f.input :biography
-      f.input :password
       f.input :photo
     end
     f.actions
