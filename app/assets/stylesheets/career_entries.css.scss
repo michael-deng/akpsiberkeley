@@ -48,7 +48,7 @@
 }
 
 .careers-table p {
-  font-size: 2em;
+  font-size: 1.8em;
 }
 
 .careers-table .table thead tr th {
@@ -59,25 +59,29 @@
 }
 
 .name {
-  width: 24%;
+  width: 25%;
 }
 
 .company {
-  width: 24%;
+  width: 25%;
 }
 
 .group {
-  width: 28%;
+  width: 25%;
 }
 
 .location {
-  width: 24%;
+  width: 25%;
 }
 
 // Customize the careers table subheadings eg. Investment Banking
 .careers-table .table .subheading td {
-  font-size: 1.2em;
+  font-size: 1.1em;
   padding-top: 1.25em;
+}
+
+.careers-table .table tr td {
+  font-size: 0.9em;
 }
 
 // Circle indicators under year navbar
