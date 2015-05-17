@@ -32,7 +32,7 @@ ActiveAdmin.register CareerEntry do
     f.inputs "Career information" do
       f.input :name
       f.input :company
-      f.input :job_category, as: :select, collection: ["Investment Banking", "Consulting", "Finance", "Technology", "Software Engineering", "Other"]
+      f.input :job_category, as: :select, collection: ["Investment Banking", "Consulting", "Finance", "Technology", "Technical", "Other"]
       f.input :group
       f.input :location
       f.input :year
