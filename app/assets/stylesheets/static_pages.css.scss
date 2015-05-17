@@ -23,8 +23,9 @@
 }
 
 .home {
-  overflow: hidden;
   width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .home-page {
@@ -48,11 +49,7 @@
   min-width: 100%;
   min-height: 100%;
   z-index: -100;
-  background-color: black;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+
 }
 
 
