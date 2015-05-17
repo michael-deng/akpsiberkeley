@@ -6,15 +6,25 @@
 
 /* Customize container holding the content of the homepage */
 
+@media screen and (max-device-width: 800px) {
+  .home { 
+    height: calc(100% - 80px);
+    width: 100%;
+    background: image_url("banquet_fa14.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+  }
+  #bgvid { 
+    display: none; 
+  }
+}
+
 .home {
-	height: calc(100% - 80px);
+  overflow: hidden;
   width: 100%;
-	background: image_url("banquet_fa14.jpg") no-repeat center center;
-	-webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  position: relative;
 }
 
 .home-page {
@@ -31,6 +41,19 @@
 
 .home-caption {
   font-size: 1.8em;
+}
+
+#bgvid {
+  position: relative;
+  overflow: hidden;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -100;
+  background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 
