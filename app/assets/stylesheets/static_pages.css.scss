@@ -6,7 +6,7 @@
 
 /* Customize container holding the content of the homepage */
 
-@media screen  {
+@media screen and (max-device-width: 800px) {
   .home { 
     height: calc(100% - 80px);
     width: 100%;
