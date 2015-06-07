@@ -1,0 +1,29 @@
+<% provide(:title, "Executive Board") %>
+
+<div class="center-content">
+  <div class="banner" id="actives-banner">
+    <div class="dark-layer">
+    	<div class="banner-text">
+        Officers
+        <hr>
+        <p class="caption">The executive board of our fraternity</p>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  
+  <div class="actives-wrapper">
+  	<ul class="actives-thumbnails">
+			<% @eboard_actives.each do |a| %>
+				<% if (a.display && a.photo?) %>
+					<li>
+						<%= link_to image_tag(a.photo.url(:small)), active_path(a) %>
+						<p><%= a.name %></p>
+            <p><%= a.eboard_position %></p>
+					</li>
+				<% end %>
+			<% end %>
+		</ul>
+	</div>
+</div>
