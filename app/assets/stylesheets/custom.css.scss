@@ -235,9 +235,19 @@ nav .container-fluid {
 
 
 
+/*** FLASH MESSAGES ***/
 
+.alert-success {
+  background: none;
+  border: none;
+  color: green;
+  margin: none;
+  padding: none;
+}
 
-
+.alert-error {
+  color: red;
+}
 
 
 

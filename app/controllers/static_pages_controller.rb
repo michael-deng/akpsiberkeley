@@ -7,6 +7,7 @@ class StaticPagesController < ApplicationController
   end
 
   def rush
+    @prospect = Prospect.new
   end
 
   def faq

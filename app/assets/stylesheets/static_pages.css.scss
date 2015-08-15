@@ -33,7 +33,7 @@
   color: white;
   width: 100%;
   position: absolute;
-  top: 35%;
+  top: 32%;
 }
 
 .home-heading {
@@ -42,6 +42,23 @@
 
 .home-caption {
   font-size: 1.6em;
+}
+
+.rush-caption {
+  font-size: 2em;
+  margin-top: 30px;
+}
+
+.rush-caption a {
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  padding: 5px 12px 5px 12px;
+}
+
+.rush-caption a:hover {
+  color: #007bb6;
+  border: 2px solid #007bb6;
 }
 
 #bgvid {

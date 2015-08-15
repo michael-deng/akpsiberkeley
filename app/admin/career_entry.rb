@@ -15,6 +15,7 @@ ActiveAdmin.register CareerEntry do
   #   permitted << :other if resource.something?
   #   permitted
   # end
+  
   index do
     id_column
     column :name

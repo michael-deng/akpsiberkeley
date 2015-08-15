@@ -13,7 +13,20 @@
 
 	<div class="application-button-wrapper">
 		<!-- <%= link_to "Apply Now", new_rush_application_path %> -->
-		<%= link_to "Apply Now", '#' %>
+		<% flash.each do |message_type, message| %>
+		  <div class="alert alert-<%= message_type %>" id="prospects-flash"><%= message %></div>
+		<% end %>
+		<span style="font-size: 1.5em;">Sign up for our emailing list</span>
+		<br />
+		<br />
+		<div>
+      <%= form_for @prospect do |f| %>
+			  <%= f.text_field :email, placeholder: "Email Address", size: "10" %>
+			  <br />
+			  <br />
+			  <%= f.submit "Submit", id: "mailing-list-button" %>
+			<% end %>
+    </div>
 		<br><br>
 		<i>Applications will open in Fall 2015</i>
 	</div>

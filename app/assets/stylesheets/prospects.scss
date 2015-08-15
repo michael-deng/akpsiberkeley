@@ -1,0 +1,23 @@
+// Place all the styles related to the prospects controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#mailing-list-button {
+  background: none;
+  color: black;
+  border: 1px solid black;
+  border-radius: 0;
+  padding: 10px;
+  text-shadow: none;
+  font-family: "cyntho_proregular", sans-serif;
+}
+
+#mailing-list-button:hover {
+	color: #007bb6;
+	border-color: #007bb6;
+}
+
+#prospects-flash {
+	margin-top: -30px;
+	margin-bottom: 0;
+}
