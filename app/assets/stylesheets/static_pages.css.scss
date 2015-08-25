@@ -218,6 +218,10 @@
   text-decoration: none;
 }
 
+@media (max-width: 767px) {
+  .about-wrapper p {width:90%;}
+}
+
 div .about-subheading {
   font-size: 2em;
 }

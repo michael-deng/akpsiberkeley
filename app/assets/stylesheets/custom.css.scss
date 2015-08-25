@@ -10,22 +10,22 @@
 
 /* Portrait tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
-  body{font-size:14px;}
+  body{font-size:15px;}
 }
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
-  body{font-size:12px;}
+  body{font-size:14px;}
 }
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
-  body{font-size:10px;}
+  body{font-size:12px;}
 }
 
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
-  body{font-size:8px;}
+  body{font-size:10px;}
 }
 
 /* Change when the navbar collapses from 768px to 1200px */
@@ -102,8 +102,18 @@ html, body {
   line-height: 150px;
 }
 
+@media (max-width: 767px) {
+  .banner-text{font-size:6em;}
+}
+
 .banner-text .caption {
   font-size: 0.14em;
+  line-height: 120%;
+  margin-top: 65px;
+}
+
+@media (max-width: 767px) {
+  .banner-text .caption{font-size:0.2em;}
 }
 
 .banner-text hr {
