@@ -25,12 +25,12 @@
 	margin: auto;
 }
 
-.btn, .btn-primary {
-	font-family: 'cyntho_proregular', sans-serif;
+@media (max-width: 767px) {
+  .rush-application-info{width:90%;}
 }
 
-.submit-button {
-	text-align: center;
+.btn, .btn-primary {
+	font-family: 'cyntho_proregular', sans-serif;
 }
 
 .rush-application-info p {
@@ -50,6 +50,35 @@
 .required:before {
 	content: "*";
 	color: red;
+}
+
+div .transcript-caption {
+	font-size: 0.75em;
+}
+
+.submit-button {
+	text-align: center;
+	font-size: 1.2em;
+	margin-top: 1.8em;
+}
+
+@media (max-width: 767px) {
+  .submit-button{margin-top:0;}
+}
+
+#application-button {
+	background: none;
+  color: black;
+  border: 1px solid black;
+  border-radius: 0;
+  padding: 10px;
+  text-shadow: none;
+  font-family: "cyntho_proregular", sans-serif;
+}
+
+#application-button:hover {
+	color: #007bb6;
+	border-color: #007bb6;
 }
 
 

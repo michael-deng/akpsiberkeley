@@ -4,7 +4,7 @@
   <div class="banner" id="login-banner">
     <div class="dark-layer">
       <div class="banner-text">
-        RUSH
+        APPLY
         <hr>
         <p class="caption">Fill out the information below to apply</p>
       </div>
@@ -13,8 +13,8 @@
 
   <div class="rush-application-wrapper">
     <div class="rush-application-info">
-      <p>Spring 2015 Rush Application</p>
-      Fill out this application to apply for Alpha Kappa Psi. All majors are welcome. We require a GPA minimum of 3.3. All attachments should be in PDF format. Your resume and cover letter should be no more than one page in length. For your cover letter, make sure to address what you hope to gain from Alpha Kappa Psi, what you can contribute to Alpha Kappa Psi, and how you stand out from other candidates. Applications are due at 11:59pm on Friday, January 30.
+      <p>Fall 2015 Application</p>
+      Fill out this application to apply for Alpha Kappa Psi. All majors are welcome. We require a GPA minimum of 3.3. All attachments should be in PDF format. Your resume and cover letter should be no more than one page in length. For your cover letter, make sure to address what you hope to gain from Alpha Kappa Psi, what you can contribute to Alpha Kappa Psi, and how you stand out from other candidates. <b>Applications are due at 11:59pm on Friday, September 4</b>.
     </div>
     <%= form_for(@rush_application, html: { class: 'form-horizontal' }) do |f| %>
 
@@ -90,7 +90,7 @@
     <div class="form-group">
       <%= f.label :sat_score, 'SAT/ACT Score', class: 'col-sm-4 control-label required'  %>
       <div class="col-sm-5">
-          <%= f.text_field :sat_score, :style => "width:100%;", :placeholder => "SAT Score", class: 'form-control'  %>
+          <%= f.text_field :sat_score, :style => "width:100%;", :placeholder => "SAT/ACT Score", class: 'form-control'  %>
       </div>
     </div>
 
@@ -104,7 +104,7 @@
     <div class="form-group">
       <%= f.label :extracurriculars, class: 'col-sm-4 control-label required'  %>
       <div class="col-sm-5">
-          <%= f.text_area :extracurriculars, :placeholder => "Leadership positions you hold and extracurricular activities you are involved in (Include number of hours per week for each commitment)", class: 'form-control'  %>
+          <%= f.text_area :extracurriculars, :rows => '4', :placeholder => "Leadership positions you hold and extracurricular activities you are involved in (Include number of hours per week for each commitment)", class: 'form-control'  %>
       </div>
     </div>
 
@@ -131,14 +131,14 @@
 
     <div class="col-sm-4">
     </div>
-    <div class="col-sm-5">
-      <i style="font-size:0.6em;">Attaching your unofficial transcript is strongly recommended and please include your name on your transcript</i>
+    <div class="col-sm-5" style="margin-top: -10px; line-height: 100%;">
+      <i class="transcript-caption">Attaching your transcript is strongly recommended and please include your name on it</i>
     </div>
 
-    <br><br>
+    <br>
 
     <div class="form-group submit-button">
-        <%= f.submit "Submit Application", class: 'btn btn-primary'  %>
+        <%= f.submit "Submit Application", id: 'application-button'  %>
         <br><br>
         <i style="font-size:0.8em;">If you have any questions regarding the application, please email the Vice President of Technology at michaeldeng18@gmail.com</i>
     </div>
