@@ -44,10 +44,11 @@ ActiveAdmin.register Active do
       f.input :display, :label => "Show on brothers page"
       f.input :biography
       f.input :photo
-      if f.object.new_record?
-          f.input :password
-          f.input :password_confirmation
-      end
+      f.input :password
+      #if f.object.new_record?
+      #    f.input :password
+      #    f.input :password_confirmation
+      #end
     end
     f.actions
   end
