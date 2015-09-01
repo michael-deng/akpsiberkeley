@@ -1,6 +1,6 @@
 ActiveAdmin.register RusheeProfile do
 
-  permit_params :name
+  permit_params :name, :photo
 
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
@@ -24,6 +24,7 @@ ActiveAdmin.register RusheeProfile do
   form do |f|
     f.inputs "Rushee Information" do
       f.input :name
+      f.input :photo
     end
     f.actions
   end
