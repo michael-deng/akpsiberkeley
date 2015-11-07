@@ -276,11 +276,27 @@ div .about-caption {
 
 
 
-/*** Application Submitted PAge Customizations ***/
+/*** Application Submitted Page Customizations ***/
 
 #application-submitted-layer {
   background-color: black;
 }
 
 
-/*** PROFESSIONAL SERVICES PAGE CUSTOMIZATIONS ***/
+/*** Sponsors Customizations ***/
+
+.sponsors-list {
+  text-align: center;
+  list-style-type: none;
+}
+
+.sponsors-list li {
+  display: inline;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.sponsors-list li img {
+  height: 15em;
+  width: auto;
+}

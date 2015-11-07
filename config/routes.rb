@@ -22,6 +22,7 @@ Akpsiberkeley::Application.routes.draw do
 
   root "static_pages#home"
   match '/about',                 to: 'static_pages#about',                 via: 'get'
+  match '/sponsors',              to: 'static_pages#sponsors',              via: 'get'
   match '/careers',               to: 'static_pages#careers',               via: 'get'
   match '/awards',                to: 'static_pages#awards',                via: 'get'
   match '/abc',                   to: 'static_pages#abc',                   via: 'get'
