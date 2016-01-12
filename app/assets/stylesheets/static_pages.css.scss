@@ -259,12 +259,29 @@ div .about-caption {
 /*** Contact Page Customizations ***/
 
 #contact {
-  background: black;
+  background: image_url("banquet_fa14.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.contact-page {
+  text-align: center;
+  color: white;
+  width: 100%;
+  position: absolute;
+  top: 20%;
+}
+
+.contact-title {
+  font-size: 2.5em;
+  color: white;
 }
 
 .contact-heading {
   padding-top: 3%;
-  font-size: 2em;
+  font-size: 1.8em;
   color: white;
 }
 
@@ -272,6 +289,16 @@ div .about-caption {
   text-decoration: none;
   color: #007bb6;
   font-size: 1.5em;
+}
+
+.really-dark-layer {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-bottom: -5px;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 
