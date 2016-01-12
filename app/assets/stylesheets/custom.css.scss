@@ -29,7 +29,7 @@
 }
 
 /* Change when the navbar collapses from 768px to 1200px */
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
   .navbar-header {
     float: none;
   }
@@ -68,6 +68,26 @@
 		display: block !important;
 	}
 }
+
+
+
+/*** MAKE BOOTSTRAP NAVBAR NOT COLLAPSE ***/
+
+// .navbar-collapse.collapse {
+// display: block!important;
+// }
+
+// .navbar-nav>li, .navbar-nav {
+// float: left !important;
+// }
+
+// .navbar-nav.navbar-right:last-child {
+// margin-right: -15px !important;
+// }
+
+// .navbar-right {
+// float: right!important;
+// }
 
 
 
