@@ -47,19 +47,19 @@
   font-size: 1.6em;
 }
 
-.rush-caption {
+.home-rush-caption {
   font-size: 2em;
   margin-top: 36px;
 }
 
-.rush-caption a {
+.home-rush-caption a {
   text-decoration: none;
   color: white;
   border: 2px solid white;
   padding: 5px 12px 5px 12px;
 }
 
-.rush-caption a:hover {
+.home-rush-caption a:hover {
   color: #007bb6;
   border: 2px solid #007bb6;
 }
@@ -148,31 +148,73 @@
   text-decoration: none;
 }
 
-.rush-schedule-wrapper {
-  width: 100%;
-  background: #1e1e1e;
-  color: white;
+.rush-nav {
+  padding-top: 30px;
+  padding-bottom: 20px;
   text-align: center;
-  padding: 50px;
+  background: #1e1e1e;
+  font-size: 1.2em;
 }
 
-.rush-schedule-wrapper div {
+.rush-nav ul {
+  list-style-type: none;
+}
+
+.rush-nav ul li {
+  display: inline;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+}
+
+.rush-nav .circle {
+  background: white;
+}
+
+.rush-nav ul a {
+  text-decoration: none;
+  color: white;
+}
+
+.rush-nav ul a:hover {
+  color: #007bb6;
+}
+
+.rush-wrapper {
+  width: 100%;
+  color: black;
+  text-align: center;
+  padding: 2em;
+}
+
+.rush-wrapper div {
   width: 80%;
   margin: auto;
-  margin-top: 45px;
+  margin-top: 1em;
 }
 
-.rush-schedule-heading {
-  font-size: 3em;
+.rush-heading {
+  font-size: 2.5em;
 }
 
-.rush-schedule-subheading {
-  font-size: 1.8em;
-  font-weight: 700;
+.rush-subheading {
+  font-size: 1.6em;
+  margin-bottom: 0.3em;
 }
 
-.rush-schedule-caption {
-  font-size: 1.25em;
+.rush-caption {
+  padding-left: 7em;
+  padding-right: 7em;
+  font-size: 1.1em;
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .rush-caption {padding-left:2em;padding-right:2em;}
+}
+
+.dark-background {
+  background: #1e1e1e;
+  color: white;
 }
 
 
@@ -208,6 +250,10 @@
 .about-nav ul a {
   text-decoration: none;
   color: black;
+}
+
+.about-nav ul a:hover {
+  color: #007bb6;
 }
 
 .circle {
