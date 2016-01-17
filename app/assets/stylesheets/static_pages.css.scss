@@ -121,19 +121,31 @@
   text-align: center;
   width: 100%;
   margin-top: -20px;
-  padding-top: 70px;
+  padding-top: 75px;
   padding-bottom: 20px;
 }
 
-.application-button-wrapper a {
+.application-button-wrapper .apply-link {
   padding: 0.55em;
-  font-size: 3.5em;
+  font-size: 3.6em;
+  font-weight: 700;
   text-decoration: none;
   color: black;
 }
 
-.application-button-wrapper a:hover {
+.application-button-wrapper i {
+  font-size: 1.1em;
+}
+
+
+.application-button-wrapper .apply-link:hover {
   color: #007bb6;
+}
+
+#facebook-redirect {
+  color: #007bb6;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 .rush-schedule-wrapper {
@@ -155,7 +167,8 @@
 }
 
 .rush-schedule-subheading {
-  font-size: 2em;
+  font-size: 1.8em;
+  font-weight: 700;
 }
 
 .rush-schedule-caption {
