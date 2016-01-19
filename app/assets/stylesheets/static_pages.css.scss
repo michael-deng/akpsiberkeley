@@ -194,6 +194,7 @@
 
 .rush-heading {
   font-size: 2.5em;
+  margin-bottom: 0.5em;
 }
 
 .rush-subheading {
@@ -202,14 +203,26 @@
 }
 
 .rush-caption {
-  padding-left: 7em;
-  padding-right: 7em;
+  padding-left: 10em;
+  padding-right: 10em;
   font-size: 1.1em;
   margin: 0;
+  font-style: italic;
+}
+
+.signature {
+  text-align: right;
+  padding-left: 10em;
+  padding-right: 10em;
 }
 
 @media (max-width: 767px) {
   .rush-caption {padding-left:2em;padding-right:2em;}
+  .signature {padding-left:2em;padding-right:2em;}
+}
+
+#cute-caption {
+  text-align: left;
 }
 
 .dark-background {
