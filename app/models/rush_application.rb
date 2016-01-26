@@ -27,6 +27,6 @@ class RushApplication < ActiveRecord::Base
     format: { with: VALID_EMAIL_REGEX }, 
     uniqueness: { case_sensitive: false }
 
- 	validates :hometown, :major, :major_gpa, :cumulative_gpa, :sat_score, :classes_now, :extracurriculars,
+ 	validates :hometown, :major, :major_gpa, :cumulative_gpa, :sat_score, :classes_now, :extracurriculars, :how_did_you_hear,
  		presence: true
 end

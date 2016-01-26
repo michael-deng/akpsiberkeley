@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150809110013) do
+ActiveRecord::Schema.define(version: 20160126091259) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -132,6 +132,7 @@ ActiveRecord::Schema.define(version: 20150809110013) do
     t.string   "cover_letter_content_type"
     t.integer  "cover_letter_file_size"
     t.datetime "cover_letter_updated_at"
+    t.text     "how_did_you_hear"
   end
 
   create_table "rushee_comments", force: true do |t|

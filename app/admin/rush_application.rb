@@ -30,6 +30,7 @@ ActiveAdmin.register RushApplication do
     column :sat_score
     column :classes_now
     column :extracurriculars
+    column :how_did_you_hear
     column :resume
     column :cover_letter
     column :transcript
@@ -50,6 +51,7 @@ ActiveAdmin.register RushApplication do
       f.input :sat_score
       f.input :classes_now
       f.input :extracurriculars
+      f.input :how_did_you_hear
       f.input :resume
       f.input :cover_letter
       f.input :transcript
