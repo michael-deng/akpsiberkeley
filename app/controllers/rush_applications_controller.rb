@@ -30,6 +30,6 @@ class RushApplicationsController < ApplicationController
       params.require(:rush_application).permit(:first_name, :last_name, :email, :phone_number,
       																					:hometown, :year, :major, :major_gpa, :cumulative_gpa,
       																					:sat_score, :classes_now, :extracurriculars,
-      																					:cover_letter, :resume, :transcript)	
+      																					:how_did_you_hear, :cover_letter, :resume, :transcript)	
     end
 end

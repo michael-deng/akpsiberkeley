@@ -50,6 +50,8 @@
 			<br>
 			<span>Extracurriculars:</span> <%= @rush_application.extracurriculars %>
 			<br>
+			<span>How did you hear about us:</span> <%= @rush_application.how_did_you_hear %>
+			<br>
 			<span>Resume:</span> <%= link_to "Download", @rush_application.resume.url(:original, false) %>
 			<br>
 			<span>Cover Letter:</span> <%= link_to "Download", @rush_application.cover_letter.url(:original, false) %>
