@@ -11,17 +11,16 @@
 		<br />
 		<br />
 		-->
-		<!-- Comment/Uncomment the above section to open/close the application portal -->
-	
+		<!-- Comment/Uncomment the above section to open/close the application portal -->	
 
 		<!-- Comment/Uncomment the below section to open/close the emailing list signup for when it's not rush season -->
 		<% flash.each do |message_type, message| %>
-		  <div class="alert alert-<%= message_type %>" id="prospects-flash"><%= message %></div>
+			<div class="alert alert-<%= message_type %>" id="prospects-flash"><%= message %></div>
 		<% end %>
 		<div style="font-size: 1.8em;margin-top:-25px;">Sign up for our emailing list for Fall 2016</div>
 		<br />
 		<div>
-      <%= form_for @prospect do |f| %>
+      	<%= form_for @prospect do |f| %>
 			  <%= f.text_field :email, placeholder: "Email Address", size: "10" %>
 			  <br />
 			  <br />
@@ -38,7 +37,9 @@
 
 		<!-- Comment/Uncomment the below section to open/close the facebook redirect for when we have a facebook page for rush -->
 		
-		<i><a href="https://www.facebook.com/events/1150392491685960/" id="facebook-redirect">View our event on Facebook</a> for more details regarding our recruitment process.</i>
+		<br />
+		<i><a href="https://www.facebook.com/events/1150392491685960/" id="facebook-redirect">View our event on Facebook</a> for more details regarding our recruitment process.<br />
+		The online application portal will open in a few days.</i>
 		
 		<!-- Comment/Uncomment the above section to open/close the facebook redirect for when we have a facebook page for rush -->
 	
