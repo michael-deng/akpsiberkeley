@@ -15,6 +15,7 @@ class RushApplication < ActiveRecord::Base
 
   validates_attachment :transcript,
   										content_type: {content_type: "application/pdf"},
+                      presence: true,
   										size: {in: 0..5.megabytes}
 
   validates :first_name, :last_name,
