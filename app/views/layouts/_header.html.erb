@@ -28,13 +28,12 @@
                     <li><%= link_to "All Brothers", actives_path %></li>
                 </ul>
             </li>
-    		<li><%= link_to "Careers", career_entries_path(:year => "2016") %></li>
+    		<li><%= link_to "Careers", career_entries_path(:year => "2017") %></li>
     		<li><%= link_to "Awards", awards_path %></li>
     		<li class="dropdown">
                 <%= link_to "Consulting", "http://www.berkeleycorporatesolutions.org/" %>
                 <ul class="dropdown-menu">
                     <li><a href="http://www.berkeleycorporatesolutions.org/">Berkeley Corporate Solutions</a></li>
-                    <li><a href="http://abventures.herokuapp.com/">Alpha Beta Ventures</a></li>
                 </ul>
             </li>
             <% if active_signed_in? %>
