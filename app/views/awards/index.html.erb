@@ -12,7 +12,7 @@
   </div>
 
   <br>
-
+  <% @awards_2017 = [] %>
   <% @awards_2016 = [] %>
   <% @awards_2015 = [] %>
   <% @awards_2014 = [] %>
@@ -25,6 +25,9 @@
   <% @awards_2006 = [] %>
   <% @awards_2005 = [] %>
   <% for i in 0 ... @awards.size %>
+    <% if @awards[i].year == 2017 %>
+        <% @awards_2017.push(@awards[i]) %>
+    <% end %>
     <% if @awards[i].year == 2016 %>
       <% @awards_2016.push(@awards[i]) %>
     <% end %>
@@ -72,6 +75,20 @@
               <th id="competition-column">COMPETITION</th>
             </tr>
           </thead>
+
+          <tr class="subheading">
+            <td><b>2017</b></td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <% for i in 0 ... @awards_2017.size %>
+            <tr>
+              <td><%= @awards_2017[i].placement %></td>
+              <td><%= @awards_2017[i].members %></td>
+              <td><%= @awards_2017[i].name %></td>
+            </tr>
+          <% end %>
 
           <tr class="subheading">
             <td><b>2016</b></td>
