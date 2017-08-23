@@ -92,10 +92,34 @@
 
 
 /*** GENERAL CUSTOMIZATIONS ***/
+//Variables can be found in theme.css.scss
+@import 'theme';
 
 html, body {
   height: 100%;
-  font-family: 'cyntho_proregular', sans-serif;
+  font-family: $f-body;
+  font-weight: 300;
+}
+
+.hr-sm{
+  width: 300px;
+}
+
+.btn {
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.btn-primary{
+  border-radius: 0px;
+  background-color: $c-primary-light;
+  border: 0px;
+
+  &:hover{
+    background-color: $c-primary;
+  }
 }
 
 .center-content {
@@ -167,6 +191,7 @@ html, body {
   height: 65px;
   margin-bottom: -80px;
   z-index: 100;
+  font-weight: 700;
 }
 
 // Squeeze the inner elements of the navbar
@@ -188,7 +213,7 @@ nav .container-fluid {
 }
 
 .navbar-top .navbar-collapse .navbar-nav li a:hover {
-  color: #007bb6;
+  color: $c-primary-light;
 }
 
 // Position the links
@@ -199,7 +224,7 @@ nav .container-fluid {
 /*** Header Dropdown Menu Customizations ***/
 
 .dropdown a:hover {
-  color: #333;
+  color: $c-primary-light;
   background: #f2f2f2;
   text-decoration: none;
 }

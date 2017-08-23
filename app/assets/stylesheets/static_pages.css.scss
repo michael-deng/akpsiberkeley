@@ -4,6 +4,9 @@
 
 /*** HOME PAGE CUSTOMIZATIONS ***/
 
+//Variables can be found in theme.css.scss
+@import 'theme';
+
 /* Customize container holding the content of the homepage */
 
 @media screen and (max-device-width: 800px) {
@@ -36,33 +39,28 @@
   color: white;
   width: 100%;
   position: absolute;
-  top: 40%;
-  font-family: 'Montserrat';
+  top: 55%;
+  transform: translate(0%, -50%);
+  padding: 15px 0px;
 }
 
 .home-heading {
   font-size: 5em;
+  font-family: $f-heading;
+  font-weight: 700;
+  letter-spacing: 20px;
+  word-wrap: break-word;
 }
 
 .home-caption {
   font-size: 1.6em;
+  font-weight: 700;
 }
 
-.home-rush-caption {
-  font-size: 2em;
-  margin-top: 36px;
-}
-
-.home-rush-caption a {
-  text-decoration: none;
-  color: white;
-  border: 2px solid white;
-  padding: 5px 12px 5px 12px;
-}
-
-.home-rush-caption a:hover {
-  color: #007bb6;
-  border: 2px solid #007bb6;
+.home-apply-button {
+  font-size: 1.2em;
+  padding: 14px 30px;
+  background-color: #0099e6;
 }
 
 #bgvid {

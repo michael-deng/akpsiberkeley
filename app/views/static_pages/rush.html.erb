@@ -1,10 +1,14 @@
-<% provide(:title, "Recruitment") %>
+<% provide(:title, "Apply") %>
 <div class="center-content">
+    <!--temporary fix - will change later  -->
+    <div style="background-color: #222; width: 100%; height: 90px;"></div>
     <div class="banner" id="rush-banner">
     </div>
     <div class="application-button-wrapper">
         <!-- Comment/Uncomment the below section to open/close the application portal -->
-        <%= link_to "Click Here to Apply Now", new_rush_application_path, class: "apply-link" %>
+        <div>
+            <%= link_to "Click Here to Apply Now", new_rush_application_path, class: "apply-link" %>
+        </div>
 		<br />
 		<br />
         <!-- Comment/Uncomment the above section to open/close the application portal -->
