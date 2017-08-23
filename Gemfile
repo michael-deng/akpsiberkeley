@@ -19,7 +19,7 @@ gem 'figaro'
 gem 'bootstrap_form'
 
 group :development, :test do
-  gem 'sqlite3', '1.3.8'
+  gem 'sqlite3', '1.3.13'
   gem 'rspec-rails', '2.13.1'
   # The following optional lines are part of the advanced setup.
   # gem 'guard-rspec', '2.5.0'
