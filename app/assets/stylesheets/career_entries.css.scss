@@ -4,6 +4,8 @@
 
 /*** CAREERS PAGE CUSTOMIZATIONS ***/
 
+@import "theme";
+
 .center-content .navbar-careers {
   margin-top: -50px;
   background: none;
@@ -44,7 +46,7 @@
   width: 85%;
   margin: auto;
   text-align: center;
-  font-family: "cyntho_proregular", sans-serif;
+  font-family: $f-body;
 }
 
 .careers-table p {

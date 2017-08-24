@@ -29,7 +29,7 @@
 }
 
 /* Change when the navbar collapses from 768px to 1200px */
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   .navbar-header {
     float: none;
   }
@@ -135,40 +135,25 @@ html, body {
   left: 0px;
 }
 
-.banner-text {
-  top: 25%;
+.banner-container{
+  top: 50%;
+  transform: translate(0%, -50%);
   width: 100%;
   position: absolute;
   text-align: center;
+  color: white;
+  padding: 0px 10px;
+}
+
+.banner-text {
+  font-size: 4em;
+  font-family: $f-heading;
+  font-weight: 700;
+}
+
+.banner-caption {
+  font-size: 1.3em;
   font-weight: 300;
-  font-size: 8em;
-  color: white;
-  line-height: 150px;
-  font-family: 'Montserrat';
-}
-
-@media (max-width: 767px) {
-  .banner-text{font-size:6em;}
-}
-
-.banner-text .caption {
-  font-size: 0.14em;
-  line-height: 120%;
-  margin-top: 65px;
-}
-
-@media (max-width: 767px) {
-  .banner-text .caption{font-size:0.2em;}
-}
-
-.banner-text hr {
-  margin-top: 20px;
-  margin-bottom: -20px;
-  border: none;
-  width: 10%;
-  height: 2px;
-  background-color: white;
-  color: white;
 }
 
 .dark-layer {
@@ -178,7 +163,7 @@ html, body {
   margin-bottom: -5px;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 17, 34, 0.7);
 }
 
 
@@ -219,6 +204,24 @@ nav .container-fluid {
 // Position the links
 .navbar-nav {
 	margin-top: 15px;
+}
+
+// Navbar Toggle Styling
+.navbar-default .navbar-toggle{
+  border-radius: 0;
+  box-shadow: none;
+
+  .icon-bar{
+    background-color: white;
+  }
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+  background-image: none;
+
+  .icon-bar{
+    background-color: #222;
+  }
 }
 
 /*** Header Dropdown Menu Customizations ***/
