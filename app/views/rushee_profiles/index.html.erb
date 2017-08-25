@@ -24,7 +24,13 @@
 						<p><%= r.name %></p>
 						<p style="font-size:0.8em; margin-top:-5px;"><%= r.rushee_comments.count %> Comment(s)</p>
 					</li>
-				<% end %>
+        <% else %>
+          <li>
+            <%= link_to "hello", rushee_profile_path(r) %>
+            <p><%= r.name %></p>
+            <p style="font-size:0.8em; margin-top:-5px;"><%= r.rushee_comments.count %> Comment(s)</p>
+          </li>
+        <% end %>
 			<% end %>
 		</ul>
 	</div>

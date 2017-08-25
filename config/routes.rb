@@ -13,6 +13,9 @@ Akpsiberkeley::Application.routes.draw do
     resources :rushee_comments, only: [:create, :destroy]
   end
 
+  post '/rushee_comment_upvotes/:rushee_comment_id', to: 'rushee_comments#create_upvote', as: 'new_upvote'
+  delete '/rushee_comment_upvotes/:rushee_comment_id', to: 'rushee_comments#destroy_upvote', as: 'destroy_upvote'
+
   resources :actives, only: [:index, :show] do
     resources :career_entries
     resources :awards

@@ -12,6 +12,8 @@ class RusheeProfilesController < ApplicationController
 		@rushee_profile = RusheeProfile.find(params[:id])
 		@rushee_comments = @rushee_profile.rushee_comments.find( :all, :order => "created_at DESC" )
 		@rushee_comment = @rushee_profile.rushee_comments.build if active_signed_in?
+
+		@upvoted_comments = current_active.rushee_comment_upvotes.map(&:rushee_comment_id)
 	end
 
 	def destroy

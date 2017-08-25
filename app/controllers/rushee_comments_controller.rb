@@ -22,6 +22,28 @@ class RusheeCommentsController < ApplicationController
 		redirect_to @rushee_profile
 	end
 
+	def create_upvote
+		upvote = RusheeCommentUpvote.new(:rushee_comment_id => params[:rushee_comment_id], :active_id => current_active.id)
+		if (upvote.save)
+			flash[:success] = "Upvote successful!"
+			redirect_to :back
+		else
+			flash[:error] = "There was an error with your upvote; please try again."
+			redirect_to :back
+		end
+	end
+
+	def destroy_upvote
+		upvote = RusheeCommentUpvote.where({:active_id => current_active.id, :rushee_comment_id => params[:rushee_comment_id]}).first
+		if (upvote.destroy)
+			flash[:success] = "Remove upvote successful!"
+			redirect_to :back
+		else
+			flash[:error] = "There was an error with your remove upvote; please try again."
+			redirect_to :back
+		end
+	end
+
 	private
 
     def rushee_comment_params

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160126091259) do
+ActiveRecord::Schema.define(version: 20170825040337) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -134,6 +134,16 @@ ActiveRecord::Schema.define(version: 20160126091259) do
     t.datetime "cover_letter_updated_at"
     t.text     "how_did_you_hear"
   end
+
+  create_table "rushee_comment_upvotes", force: true do |t|
+    t.integer  "active_id"
+    t.integer  "rushee_comment_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "rushee_comment_upvotes", ["active_id"], name: "index_rushee_comment_upvotes_on_active_id"
+  add_index "rushee_comment_upvotes", ["rushee_comment_id"], name: "index_rushee_comment_upvotes_on_rushee_comment_id"
 
   create_table "rushee_comments", force: true do |t|
     t.text     "content"

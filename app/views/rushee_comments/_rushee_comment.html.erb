@@ -1,16 +1,40 @@
-<%= rushee_comment.active.name %>
-<br>
-Posted <%= time_ago_in_words(rushee_comment.created_at) %> ago
-<br>
-<br>
-<div style="width:80%; margin:auto;">
-	<%= rushee_comment.content %>
+<div style="position:relative;">
+    <strong><%= rushee_comment.active.name %></strong>
+    <br/>
+    Posted <%= time_ago_in_words(rushee_comment.created_at) %> ago
+    <br/>
+    <br/>
+    <div style="width:80%; margin:auto;">
+    	<%= rushee_comment.content %>
+    </div>
+    <br/>
+    <div>
+        <% if (@upvoted_comments.include? rushee_comment.id) %>
+            <%= link_to destroy_upvote_path(rushee_comment.id), :method => :delete do%>
+                <div class="rushee_comment_upvote">
+                    <%= image_tag "upvote-orange.png", :class => "rushee_comment_upvote-img" %>
+                </div>
+            <% end %>
+        <% else %>
+            <%= link_to new_upvote_path(rushee_comment.id), :method => :post do%>
+                <div class="rushee_comment_upvote">
+                    <%= image_tag "upvote-gray.png", :class => "rushee_comment_upvote-img" %>
+                </div> 
+            <% end %>
+        <% end %>
+
+        <% if (rushee_comment.get_upvote_names.length > 0) %>
+            <strong><%= rushee_comment.get_upvote_names.length %> upvotes from:</strong> <%= rushee_comment.get_upvote_names.join(", ") %>
+        <% else %>
+            <strong>No Upvotes For This Comment Yet</strong>
+        <% end %>
+    </div>
+    <br/>
+    <br/>
+    <% if (current_active.eql? rushee_comment.active) %>
+    	<%= link_to "Delete Comment", [@rushee_profile, rushee_comment], method: :delete,
+    	confirm: "You sure?",
+    	title: rushee_comment.content %>
+    <% end %>
 </div>
-<br>
-<br>
-<% if (current_active.eql? rushee_comment.active) %>
-	<%= link_to "Delete", [@rushee_profile, rushee_comment], method: :delete,
-	confirm: "You sure?",
-	title: rushee_comment.content %>
-<% end %>
 <hr>
