@@ -17,6 +17,7 @@
 
   <nav class="nav navbar-default navbar-careers">
     <ul class="nav navbar-nav">
+      <li><%= link_to "2018", career_entries_path(:year => "2018") %><div id="2018"></div></li>
       <li><%= link_to "2017", career_entries_path(:year => "2017") %><div id="2017"></div></li>
       <li><%= link_to "2016", career_entries_path(:year => "2016") %><div id="2016"></div></li>
       <li><%= link_to "2015", career_entries_path(:year => "2015") %><div id="2015"></div></li>
@@ -95,7 +96,7 @@
               <th class="location">LOCATION</th>
             </tr>
           </thead>
-          
+
           <% if @full_banking_entries.size > 0 %>
             <tr class="subheading">
               <td>Investment Banking</td>
@@ -222,7 +223,7 @@
               <th class="location">LOCATION</th>
             </tr>
           </thead>
-          
+
           <% if @intern_banking_entries.size > 0 %>
             <tr class="subheading">
               <td>Investment Banking</td>
